@@ -1,0 +1,101 @@
+[26-Oct-2022 19:45:44 Europe/Moscow] PHP Warning:  Undefined variable $layout_content in C:\OSPanel\domains\yeticave\init\index.php on line 16
+[19-Mar-2023 08:59:51 Europe/Moscow] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in C:\OSPanel\domains\yeticave\init\index.php on line 23
+[19-Mar-2023 09:54:19 Europe/Moscow] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in C:\OSPanel\domains\yeticave\init\init.php on line 2
+[19-Mar-2023 09:54:19 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: mysqli_set_charset(): Argument #1 ($mysql) must be of type mysqli, bool given in C:\OSPanel\domains\yeticave\init\init.php:3
+Stack trace:
+#0 C:\OSPanel\domains\yeticave\init\init.php(3): mysqli_set_charset()
+#1 C:\OSPanel\domains\yeticave\init\index.php(8): require_once('C:\\OSPanel\\doma...')
+#2 {main}
+  thrown in C:\OSPanel\domains\yeticave\init\init.php on line 3
+[19-Mar-2023 10:30:43 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function get_query_list_lots() in C:\OSPanel\domains\yeticave\init\index.php:23
+Stack trace:
+#0 {main}
+  thrown in C:\OSPanel\domains\yeticave\init\index.php on line 23
+[19-Mar-2023 10:31:18 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:31:18 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:31:18 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:31:18 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:31:18 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:31:18 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:31:18 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:31:18 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:31:18 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:31:18 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:31:18 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:31:18 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:40 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:40 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:40 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:40 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:40 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:40 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:40 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:40 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:40 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:40 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:40 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:40 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:41 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:41 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:41 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:41 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:41 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:41 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:41 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:41 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:41 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:41 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:41 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:41 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\main.php on line 8
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:32:42 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:34:15 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:34:15 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:34:15 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:34:15 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:34:15 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[19-Mar-2023 10:34:15 Europe/Moscow] PHP Warning:  Array to string conversion in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 62
+[22-Mar-2023 13:37:22 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function get_categories() in C:\OSPanel\domains\yeticave\init\index.php:12
+Stack trace:
+#0 {main}
+  thrown in C:\OSPanel\domains\yeticave\init\index.php on line 12
+[22-Mar-2023 13:55:38 Europe/Moscow] PHP Parse error:  syntax error, unexpected token "if" in C:\OSPanel\domains\yeticave\init\models.php on line 17
+[22-Mar-2023 13:55:55 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function get_arrow() in C:\OSPanel\domains\yeticave\init\models.php:18
+Stack trace:
+#0 C:\OSPanel\domains\yeticave\init\index.php(12): get_categories()
+#1 {main}
+  thrown in C:\OSPanel\domains\yeticave\init\models.php on line 18
