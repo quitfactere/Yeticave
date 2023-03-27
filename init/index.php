@@ -1,8 +1,8 @@
 <?php
 require_once("helpers.php");
 require_once ("functions.php");
-require_once ("init.php");
 require_once ("data.php");
+require_once ("init.php");
 require_once ("models.php");
 	
 	if (!$connect) {
@@ -13,24 +13,17 @@ require_once ("models.php");
 	} if ($result) {
 	$categories = mysqli_fetch_all($result, MYSQLI_ASSOC);
 } else {
-	$error = mysqli_error();
+	$error = mysqli_error($connect);
 }
-
-	$sql_query = qet_query_list_lots();
+	
+	$sql_query = qet_query_list_lots('2022-07-15');
 	
 	$result = mysqli_query($connect, $sql_query);
 	if ($result) {
 		$goods = mysqli_fetch_all($result, MYSQLI_ASSOC);
 	} else {
-		$error = mysqli_error();
+		$error = mysqli_error($connect);
 	}
-
-/** @var получаем  $categories */
-$categories = get_categories($connect);
-
-$page_404 = include_template("404.php", [
-	"categories" => $categories
-]);
 
 $page_content = include_template("main.php", [
   "categories" => $categories,
@@ -40,7 +33,9 @@ $page_content = include_template("main.php", [
 $layout_content = include_template("layout.php", [
   "content" => $page_content,
   "categories" => $categories,
-  "title" => "Главная"
+  "title" => "Главная",
+	/**"is_auth" => $is_auth,
+	"user_name" => $user_name*/
 ]);
 
 print($layout_content);
