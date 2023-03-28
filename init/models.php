@@ -13,7 +13,7 @@ function qet_query_list_lots($date)
 
 function get_query_lot($id_lot)
 {
-	return "SELECT title, lot_description, image_path, start_price, date_finish, categories.category_name
+	return "SELECT lots.title, lots.lot_description, lots.image_path, lots.start_price, lots.date_finish, categories.category_name
 	FROM lots
 	JOIN categories ON lots.category_id = categories.id
 	WHERE lots.id = $id_lot";

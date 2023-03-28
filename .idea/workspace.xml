@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec946cff-ffa6-4390-b580-44d28ffc6c56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/init/templates/layout-lot.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/init.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/init.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/helpers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/lot.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/lot.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/main-lot.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/init/models.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/models.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/templates/main-lot.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/main-lot.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/templates/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/main.php" afterDir="false" />
@@ -34,6 +28,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunConfigurationTargetLRU" value="6bcf6c82-f2df-449c-b2e6-3c5c2be5b390&#10;6bcf6c82-f2df-449c-b2e6-3c5c2be5b390/schema/&quot;yeticave&quot;" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -41,7 +36,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/init/templates" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -88,7 +83,7 @@
       <workItem from="1679573664249" duration="240000" />
       <workItem from="1679573911100" duration="134000" />
       <workItem from="1679890286916" duration="104000" />
-      <workItem from="1679900698090" duration="9941000" />
+      <workItem from="1679900698090" duration="20865000" />
     </task>
     <servers />
   </component>
