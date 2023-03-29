@@ -5,11 +5,11 @@ require_once ("data.php");
 require_once ("init.php");
 require_once ("models.php");
 	
-	if (!$connect) {
+	if (!$connect) { //если подключение не состоялось
 		$error = mysqli_connect_error();
-	} else {
-		$sql_query = "SELECT character_code, category_name FROM categories";
-		$result = mysqli_query($connect, $sql_query);
+	} else {//если подключение произошло успешно
+		$sql_query = "SELECT character_code, category_name FROM categories";//запрос к БД на получение списка категорий
+		$result = mysqli_query($connect, $sql_query, MYSQLI_STORE_RESULT );//результат запроса записывается в переменную в виде буфер
 	} if ($result) {
 	$categories = mysqli_fetch_all($result, MYSQLI_ASSOC);
 } else {
