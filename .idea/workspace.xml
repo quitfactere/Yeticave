@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec946cff-ffa6-4390-b580-44d28ffc6c56" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7dd5005c-b98e-4fba-9245-6ac9191f06e5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7dd5005c-b98e-4fba-9245-6ac9191f06e5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/templates/main-lot.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/main-lot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/templates/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/main.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/test.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,6 +85,7 @@
       <workItem from="1679900698090" duration="23357000" />
       <workItem from="1680077903771" duration="6064000" />
       <workItem from="1680099936565" duration="781000" />
+      <workItem from="1680108771148" duration="3557000" />
     </task>
     <servers />
   </component>

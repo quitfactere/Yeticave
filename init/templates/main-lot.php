@@ -10,7 +10,7 @@
 	<div class="lot-item__right">
 		<div class="lot-item__state">
 			<div class="lot-item__timer timer <?php if ($res[0] < 1) : ?> timer--finishing<?php endif; ?>">
-				14:44
+				23:58
 			</div>
 			<div class="lot-item__cost-state">
 				<div class="lot-item__rate">
