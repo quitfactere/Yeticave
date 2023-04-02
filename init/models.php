@@ -4,15 +4,13 @@
  * @param string $date Дата в виде строки, в формате 'YYYY-MM-DD'
  * @return string SQL-запрос
  */
-function qet_query_list_lots($date)
-{
+function qet_query_list_lots($date) {
 	return "SELECT lots.id, lots.title, lots.image_path, lots.start_price, lots.date_finish, categories.category_name FROM lots
                 JOIN categories ON lots.category_id = categories.id
-                WHERE date_creation > $date ORDER BY date_creation DESC";
+                WHERE lots.date_creation > $date ORDER BY date_creation DESC";
 }
 
-function get_query_lot($id_lot)
-{
+function get_query_lot($id_lot) {
 	return "SELECT lots.title, lots.lot_description, lots.image_path, lots.start_price, lots.date_finish, categories.category_name
 	FROM lots
 	JOIN categories ON lots.category_id = categories.id

@@ -127,7 +127,7 @@ function get_noun_plural_form (int $number, string $one, string $two, string $ma
  * @return string Итоговый HTML
  */
 function include_template($name, array $data = []) {
-    $name = 'templates/' . $name;
+    $name = 'templates/' . $name;//name - название файла
     $result = '';
 
     if (!is_readable($name)) {
@@ -135,8 +135,8 @@ function include_template($name, array $data = []) {
     }
 
     ob_start();
-    extract($data);
-    require $name;
+    extract($data);//импортирует переменные из массива, ключи - имена переменных
+    require $name;//подключает шаблон по пути
 
     $result = ob_get_clean();
 

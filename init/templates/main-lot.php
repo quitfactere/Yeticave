@@ -1,3 +1,7 @@
+<?php
+require_once ("functions.php");
+$get_time_diff = get_time_left($lot['date_finish']);
+?>
 <h2><?= $lot['title'] ?></h2>
 <div class="lot-item__content">
 	<div class="lot-item__left">
@@ -9,8 +13,8 @@
 	</div>
 	<div class="lot-item__right">
 		<div class="lot-item__state">
-			<div class="lot-item__timer timer <?php if ($res[0] < 1) : ?> timer--finishing<?php endif; ?>">
-				23:58
+			<div class="lot-item__timer timer <?php if ($get_time_diff[0] < 1) : ?> timer--finishing<?php endif; ?>">
+				<?php print "Дата и время завершения лота: " . $lot['date_finish']; ?>
 			</div>
 			<div class="lot-item__cost-state">
 				<div class="lot-item__rate">

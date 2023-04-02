@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec946cff-ffa6-4390-b580-44d28ffc6c56" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/init/test_2.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/7dd5005c-b98e-4fba-9245-6ac9191f06e5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7dd5005c-b98e-4fba-9245-6ac9191f06e5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/helpers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/models.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/models.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/templates/layout-lot.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/layout-lot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/templates/layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/layout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/templates/main-lot.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/main-lot.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/templates/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/main.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/test.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +41,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/init/templates" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -86,6 +92,10 @@
       <workItem from="1680077903771" duration="6064000" />
       <workItem from="1680099936565" duration="781000" />
       <workItem from="1680108771148" duration="3557000" />
+      <workItem from="1680163984247" duration="6366000" />
+      <workItem from="1680183884005" duration="618000" />
+      <workItem from="1680232509830" duration="12633000" />
+      <workItem from="1680269225628" duration="1396000" />
     </task>
     <servers />
   </component>
