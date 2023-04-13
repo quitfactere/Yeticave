@@ -10,6 +10,7 @@ $user_name = 'Yuriy'; // укажите здесь ваше имя
   <title><?= $title; ?></title>
   <link href="css/normalize.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/flatpickr.min.css" rel="stylesheet">
 </head>
 <body>
 <div class="page-wrapper">
@@ -49,19 +50,42 @@ $user_name = 'Yuriy'; // укажите здесь ваше имя
     </div>
   </header>
 
-  <main class="container">
-    <?= $content; ?>
+  <main>
+    <nav class="nav">
+      <ul class="nav__list container">
+        <?php foreach ($categories as $category): ?>
+          <li class="nav__item">
+            <a href="pages/all-lots.html"><?= $category["category_name"]; ?></a>
+          </li>
+        <?php endforeach; ?>
+      </ul>
+    </nav>
+    <?php echo $content; ?>
   </main>
+
 </div>
 
 <footer class="main-footer">
   <nav class="nav">
     <ul class="nav__list container">
-      <?php foreach ($categories as $category): ?>
-        <li class="nav__item">
-          <a href="pages/all-lots.html"><?= $category['category_name']; ?></a>
-        </li>
-      <?php endforeach; ?>
+      <li class="nav__item">
+        <a href="all-lots.html">Доски и лыжи</a>
+      </li>
+      <li class="nav__item">
+        <a href="all-lots.html">Крепления</a>
+      </li>
+      <li class="nav__item">
+        <a href="all-lots.html">Ботинки</a>
+      </li>
+      <li class="nav__item">
+        <a href="all-lots.html">Одежда</a>
+      </li>
+      <li class="nav__item">
+        <a href="all-lots.html">Инструменты</a>
+      </li>
+      <li class="nav__item">
+        <a href="all-lots.html">Разное</a>
+      </li>
     </ul>
   </nav>
   <div class="main-footer__bottom container">
@@ -107,7 +131,7 @@ $user_name = 'Yuriy'; // укажите здесь ваше имя
         </svg>
       </a>
     </div>
-    <a class="main-footer__add-lot button" href="templates/add-lot.php">Добавить лот</a>
+    <a class="main-footer__add-lot button" href="add-lot.html">Добавить лот</a>
     <div class="main-footer__developed-by">
       <span class="visually-hidden">Разработано:</span>
       <a class="logo-academy" href="https://htmlacademy.ru/intensive/php">

@@ -6,15 +6,15 @@ require_once("init.php");
 require_once("models.php");
 
 // подлючаемся к БД, если true, то направляем запрос в БД, возвращает список лотов, асоциативный массив
-if(!$connect) {
+if(!$con) {
 	$error = mysqli_connect_error();
 } else {
-	$sql_query = "SELECT character_code, category_name FROM categories";// возвращаем из БД лоты
-	$result = mysqli_query($connect, $sql_query, MYSQLI_STORE_RESULT);
+	$sql = "SELECT character_code, category_name FROM categories";// возвращаем из БД лоты
+	$result = mysqli_query($con, $sql, MYSQLI_STORE_RESULT);
 	if ($result) { // если запрос вернул результат запроса из БД
 		$categories = mysqli_fetch_all($result, MYSQLI_ASSOC); // формируем список категорий в виде ассоциативного массива
 	} else {
-		$error = mysqli_error($connect);
+		$error = mysqli_error($con);
 	}
 }
 
@@ -29,15 +29,15 @@ $page_404 = include_template("404.php", [
  *иначе стрница 404
  */
 if($id) {//если ID лота присутствует
-	$sql_query = get_query_lot($id);//возвращаем информацию о лоте по его id из БД
+	$sql = get_query_lot($id);//возвращаем информацию о лоте по его id из БД
 } else {
 	print($page_404);
 	die();
 }
 
-$result = mysqli_query($connect, $sql_query);
+$result = mysqli_query($con, $sql);
 if($result) {
-	$lot = mysqli_fetch_assoc($result);
+	$lot = get_arrow($result);
 } else {
 	$error = mysqli_error($connect);
 }
@@ -55,7 +55,9 @@ $page_content = include_template("main-lot.php", [
 $layout_content = include_template("layout-lot.php", [
 	"content" => $page_content,
 	"categories" => $categories,
-	"title" => $lot["title"]
+	"title" => $lot["title"],
+  "is_auth" => $is_auth,
+  "user_name" => $user_name
 	]);
 
 print($layout_content);

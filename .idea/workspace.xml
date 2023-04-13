@@ -2,18 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec946cff-ffa6-4390-b580-44d28ffc6c56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/init/test_2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/add.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/templates/layout-add.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/templates/main-add.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/uploads/642e47ea60974.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/uploads/642e65f427407.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/uploads/lot-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/uploads/lot-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/uploads/lot-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/uploads/lot-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/uploads/lot-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/uploads/lot-6.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/7dd5005c-b98e-4fba-9245-6ac9191f06e5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7dd5005c-b98e-4fba-9245-6ac9191f06e5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/data.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/data.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/helpers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/models.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/models.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/init.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/init.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/lot.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/lot.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/templates/layout-lot.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/layout-lot.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/templates/layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/layout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/templates/main-lot.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/main-lot.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/test.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,33 +35,45 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="2NMVI4Dg0ySy5pfm94bonoPHZm5" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunConfigurationTargetLRU" value="6bcf6c82-f2df-449c-b2e6-3c5c2be5b390&#10;6bcf6c82-f2df-449c-b2e6-3c5c2be5b390/schema/&quot;yeticave&quot;" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/init/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\OSPanel\domains\yeticave\init\templates" />
+      <recent name="C:\OSPanel\domains\yeticave\init\uploads" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\OSPanel\domains\yeticave\init\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Database Script.queries.sql">
+  <component name="RunManager" selected="Database Script.schema.sql">
     <configuration name="queries.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/init/queries.sql" />
       <script-mode>FILE</script-mode>
@@ -96,6 +117,19 @@
       <workItem from="1680183884005" duration="618000" />
       <workItem from="1680232509830" duration="12633000" />
       <workItem from="1680269225628" duration="1396000" />
+      <workItem from="1680407154675" duration="4816000" />
+      <workItem from="1680442599278" duration="10429000" />
+      <workItem from="1680458475663" duration="539000" />
+      <workItem from="1680491491393" duration="14805000" />
+      <workItem from="1680533708574" duration="8830000" />
+      <workItem from="1680617136453" duration="4304000" />
+      <workItem from="1680631600096" duration="4769000" />
+      <workItem from="1680661515866" duration="12002000" />
+      <workItem from="1680701062397" duration="10104000" />
+      <workItem from="1680750916014" duration="4171000" />
+      <workItem from="1680761418946" duration="2129000" />
+      <workItem from="1680798635549" duration="613000" />
+      <workItem from="1680843465799" duration="610000" />
     </task>
     <servers />
   </component>
@@ -115,6 +149,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/init" />
     </ignored-roots>

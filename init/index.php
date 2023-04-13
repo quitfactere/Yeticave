@@ -5,27 +5,28 @@ require_once("data.php");
 require_once("init.php");
 require_once("models.php");
 
-if(!$connect) { //если подключение не состоялось
+if(!$con) { //если подключение не состоялось
 	$error = mysqli_connect_error();
 } else {//если подключение произошло успешно
-	$sql_query = "SELECT character_code, category_name FROM categories";//запрос к БД на получение списка категорий
-	$result = mysqli_query($connect, $sql_query, MYSQLI_STORE_RESULT);//результат запроса записывается в переменную в виде буфер
+	$sql = "SELECT character_code, category_name FROM categories";//запрос к БД на получение списка категорий
+	$result = mysqli_query($con, $sql, MYSQLI_STORE_RESULT);//результат запроса записывается в переменную в виде буфер
 }
 if($result) {//если результат возвращает данные из БД
 	$categories = mysqli_fetch_all($result, MYSQLI_ASSOC);//формируется массив со списком категорий
 } else {
-	$error = mysqli_error($connect);
+	$error = mysqli_error($con);
 }
 
-$sql_query = qet_query_list_lots("2023-03-23 00:00:00");
+$sql = qet_query_list_lots("\"2023-02-20 00:00:00\"");
+//$sql_query = "SELECT id, title FROM lots WHERE date_creation > \"2023-03-23 00:00:00\"";
+$result = mysqli_query($con, $sql);
 
-$result = mysqli_query($connect, $sql_query);
-var_dump($result);
 if($result) {
 	$goods = mysqli_fetch_all($result, MYSQLI_ASSOC);
 } else {
-	$error = mysqli_error($connect);
+	$error = mysqli_error($con);
 }
+
 
 $page_content = include_template("main.php", [
 	"categories" => $categories,
@@ -36,8 +37,8 @@ $layout_content = include_template("layout.php", [
 	"content" => $page_content,
 	"categories" => $categories,
 	"title" => "Главная",
-	/**"is_auth" => $is_auth,
-	 * "user_name" => $user_name*/
+	"is_auth" => $is_auth,
+  "user_name" => $user_name
 ]);
 
 print($layout_content);
