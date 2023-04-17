@@ -1,6 +1,5 @@
 <?php if (!function_exists('price_format')) {
-  function price_format($price)
-  {
+  function price_format($price) {
     $price_ceil = ceil($price);
     if ($price_ceil > 1000) {
       $price_ceil = number_format($price_ceil, 0, ".", " ") . " ";
@@ -13,8 +12,7 @@
 
 
 <?php if (!function_exists('price_format_substr')) {
-  function price_format_substr($price)
-  {
+  function price_format_substr($price) {
     $price_ceil = ceil($price);
     if ($price_ceil > 1000) {
       $price_part_1 = substr($price_ceil, 0, -3);
@@ -26,8 +24,7 @@
 ?>
 
 <?php
-function get_time_left($date)
-{
+function get_time_left($date) {
   date_default_timezone_set('Europe/Moscow');
   $final_date = date_create($date); // 1. создаем конечную дату
   $cur_date = date_create("now"); // 2. создаём текущую дату
@@ -50,94 +47,20 @@ function get_time_left($date)
  * @param object $result_query mysqli Результат запроса к базе данных
  * @return array
  */
-function get_arrow($result_query)
-{
-  $row = mysqli_num_rows($result_query);//получаем количество сток в наборе результатов
+function get_arrow($result_query) {
+  $row = mysqli_num_rows($result_query);//получаем КОЛИЧЕСТВО сток в наборе результатов
   if ($row === 1) {
     $arrow = mysqli_fetch_assoc($result_query);//Выбирает одну строку данных из набора результатов и возвращает её в виде ассоциативного массива
   } else if ($row > 1) {
-    $arrow = mysqli_fetch_all($result_query, MYSQLI_ASSOC);
+    $arrow = mysqli_fetch_all($result_query, MYSQLI_ASSOC);//возвращает массив, содержащий ассоциативные или обычные массивы с данными результирующей таблицы
   }
 
   return $arrow;
 }
 
-function get_categories($connect)
-{
-  if (!$connect) {
-    $error = mysqli_connect_error();
-    return $error;
-  } else {
-    $sql = "SELECT * FROM categories;";
-    $result = mysqli_query($connect, $sql);
-    if ($result) {
-      $categories = get_arrow($result);
-      return $categories;
-    } else {
-      $error = mysqli_error($connect);
-      return $error;
-    }
-  }
-}
-
-/** Вспомигогательная функция для получения значений из POST-запроса */
+/** Вспомогательная функция для получения значений из POST-запроса */
 function getPostVal($name) {
   return $_POST[$name] ?? "";
-}
-
-function get_query_create_lot($user_id): string
-{
-  /** добавляет новый лот в таблицу lots */
-  return "INSERT INTO lots (title, category_id, lot_description, start_price, step, date_finish, image_path, user_id ) VALUES (?, ?, ?, ?, ?, ?, ?, $user_id)";
-}
-
-/**
- * Создает подготовленное выражение на основе готового SQL запроса и переданных данных
- *
- * @param $link mysqli Ресурс соединения
- * @param $sql string SQL запрос с плейсхолдерами вместо значений
- * @param array $data Данные для вставки на место плейсхолдеров
- *
- * @return stmt Подготовленное выражение
- */
-function db_get_prepare_stmt_version($link, $sql, $data = []) {
-  $stmt = mysqli_prepare($link, $sql);
-
-  if ($stmt === false) {
-    $errorMsg = 'Не удалось инициализировать подготовленное выражение: ' . mysqli_error($link);
-    die($errorMsg);
-  }
-
-  if ($data) {
-    $types = '';
-    $stmt_data = [];
-
-    foreach ($data as $key => $value) {
-      $type = 's';
-
-      if (is_int($value)) {
-        $type = 'i';
-      }
-      else if (is_double($value)) {
-        $type = 'd';
-      }
-
-      if ($type) {
-        $types .= $type;
-        $stmt_data[] = $value;
-      }
-    }
-
-    $values = array_merge([$stmt, $types], $stmt_data);
-    mysqli_stmt_bind_param(...$values);
-
-    if (mysqli_errno($link) > 0) {
-      $errorMsg = 'Не удалось связать подготовленное выражение с параметрами: ' . mysqli_error($link);
-      die($errorMsg);
-    }
-  }
-
-  return $stmt;
 }
 
 /**
@@ -147,15 +70,13 @@ function db_get_prepare_stmt_version($link, $sql, $data = []) {
  * @param array @allowed_list список существующих категорий
  * @return string Текст сообщения об ошибке
  */
-function validate_category($id, $allowed_list)
-{
+function validate_category($id, $allowed_list) {
   if (!in_array($id, $allowed_list)) {
     return "Указана несуществующая категория";
   }
 }
 
-function validate_number($num)
-{ //проверка на то, что пользователь ввел число больше нуля
+function validate_number($num) { //проверка на то, что пользователь ввел число больше нуля
   if (!empty($num)) { //если значение поля (числа) не пустое
     $num *= 1;
     if (is_int($num) && $num > 0) { //если введённое значение - число И больше нуля
@@ -170,8 +91,7 @@ function validate_number($num)
  * @param string $date дата, которую ввёл пльзователь в форму
  * @return string текст сообщения об ошибке
  */
-function validate_date($date)
-{
+function validate_date($date) {
   if (is_date_valid($date)) {
     $now = date_create("now");
     $d = date_create($date);
@@ -183,6 +103,28 @@ function validate_date($date)
     };
   } else {
     return "Содержимое поля \"Дата окончания торгов\" должно быть датой в формате \"ГГГГ-ММ-ДД\"";
+  }
+}
+
+
+function validate_email($email/*, $email_array*/) {
+  if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    return "Необходимо ввести корректный email";
+  }
+/*
+  foreach ($email_array as $email_exist) {
+    if ($email == $email_exist["email"]) {
+      return "Введённый email уже зарегистрирован другим пользователем";
+    }
+  }*/
+}
+
+function validate_length($value, $min, $max) {
+  if ($value) {
+    $len = strlen($value);
+    if ($len < $min or $len > $max) {
+      return "Значение должно быть от $min до $max символов";
+    }
   }
 }
 

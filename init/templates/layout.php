@@ -1,8 +1,3 @@
-<?php
-$is_auth = rand(0, 1);
-
-$user_name = 'Yuriy'; // укажите здесь ваше имя
-?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -24,7 +19,7 @@ $user_name = 'Yuriy'; // укажите здесь ваше имя
         <input type="search" name="search" placeholder="Поиск лота">
         <input class="main-header__search-btn" type="submit" name="find" value="Найти">
       </form>
-      <a class="main-header__add-lot button" href="pages/add-lot.html">Добавить лот</a>
+      <a class="main-header__add-lot button" href="add.php">Добавить лот</a>
 
       <nav class="user-menu">
 
@@ -37,7 +32,7 @@ $user_name = 'Yuriy'; // укажите здесь ваше имя
         <?php else: ?>
           <ul class="user-menu__list">
             <li class="user-menu__item">
-              <a href="#">Регистрация</a>
+              <a href="templates/layout-sign-up.php">Регистрация</a>
             </li>
             <li class="user-menu__item">
               <a href="#">Вход</a>

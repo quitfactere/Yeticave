@@ -11,8 +11,8 @@ values
 insert into
   users(email, user_name, user_password, contacts)
 values
-  ('vasya @gmail.com', 'Vasya', 'vasya_pass', '123456789'),
-  ('petya @gmail.com', 'Petya', 'petya_pass', '987654321');
+  ('vasya@gmail.com', 'Vasya', 'vasya_pass', '123456789'),
+  ('petya@gmail.com', 'Petya', 'petya_pass', '987654321');
 
 insert into
   lots(

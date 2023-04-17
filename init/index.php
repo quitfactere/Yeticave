@@ -6,7 +6,7 @@ require_once("init.php");
 require_once("models.php");
 
 if(!$con) { //если подключение не состоялось
-	$error = mysqli_connect_error();
+	$error = mysqli_connect_error(); //возвращает сообщение об ошибки поледней попытки подключения
 } else {//если подключение произошло успешно
 	$sql = "SELECT character_code, category_name FROM categories";//запрос к БД на получение списка категорий
 	$result = mysqli_query($con, $sql, MYSQLI_STORE_RESULT);//результат запроса записывается в переменную в виде буфер
@@ -14,21 +14,19 @@ if(!$con) { //если подключение не состоялось
 if($result) {//если результат возвращает данные из БД
 	$categories = mysqli_fetch_all($result, MYSQLI_ASSOC);//формируется массив со списком категорий
 } else {
-	$error = mysqli_error($con);
+	$error = mysqli_error($con); // возвращает сообщение об ошибке последнего вызова функции MySQLi, который может успешно выполниться или провалиться
 }
 
-$sql = qet_query_list_lots("\"2023-02-20 00:00:00\"");
-//$sql_query = "SELECT id, title FROM lots WHERE date_creation > \"2023-03-23 00:00:00\"";
-$result = mysqli_query($con, $sql);
+$sql = qet_query_list_lots("\"2023-02-20 00:00:00\""); // формирует запрос на получение спискановых лотов, с сортировкой, после указанной даты
+$result = mysqli_query($con, $sql); //результат запроса (подключение, выполнение запроса в БД)
 
-if($result) {
-	$goods = mysqli_fetch_all($result, MYSQLI_ASSOC);
+if($result) {//если результат запроса истина, т.е. состоялся
+	$goods = mysqli_fetch_all($result, MYSQLI_ASSOC); //выбирает все сроки из $result, возвращает ассоциативный массив
 } else {
 	$error = mysqli_error($con);
 }
 
-
-$page_content = include_template("main.php", [
+$page_content = include_template("main.php", [//подключает шаблон main.php, передаёт туда данные "categories", "goods" - переменные из массива
 	"categories" => $categories,
 	"goods" => $goods
 ]);

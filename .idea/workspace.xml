@@ -2,27 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec946cff-ffa6-4390-b580-44d28ffc6c56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/init/add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/init/templates/layout-add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/init/templates/main-add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/init/uploads/642e47ea60974.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/init/uploads/642e65f427407.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/404.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/sign-up.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/templates/layout-sign-up.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/templates/main-sign-up.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/init/uploads/lot-1.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/init/uploads/lot-2.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/init/uploads/lot-3.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/init/uploads/lot-4.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/init/uploads/lot-5.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/init/uploads/lot-6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7dd5005c-b98e-4fba-9245-6ac9191f06e5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7dd5005c-b98e-4fba-9245-6ac9191f06e5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/data.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/data.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/add.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/init.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/init.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/lot.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/lot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/models.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/models.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/queries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/init/queries.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/templates/layout-add.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/layout-add.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/templates/layout-lot.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/layout-lot.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/templates/layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/layout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/templates/main-add.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/main-add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/test_2.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/test_2.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,14 +60,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/init/templates" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\OSPanel\domains\yeticave\init\templates" />
+      <recent name="C:\OSPanel\domains\yeticave\init" />
       <recent name="C:\OSPanel\domains\yeticave\init\uploads" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -130,6 +132,15 @@
       <workItem from="1680761418946" duration="2129000" />
       <workItem from="1680798635549" duration="613000" />
       <workItem from="1680843465799" duration="610000" />
+      <workItem from="1681364455328" duration="3569000" />
+      <workItem from="1681417721093" duration="10000" />
+      <workItem from="1681417744017" duration="1431000" />
+      <workItem from="1681447762892" duration="10726000" />
+      <workItem from="1681477879602" duration="10450000" />
+      <workItem from="1681534777229" duration="4204000" />
+      <workItem from="1681571489606" duration="599000" />
+      <workItem from="1681622058854" duration="6640000" />
+      <workItem from="1681636298624" duration="595000" />
     </task>
     <servers />
   </component>

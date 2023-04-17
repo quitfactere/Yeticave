@@ -12,10 +12,11 @@
     <?php $classname = isset($errors["category"]) ? "form__item--invalid" : ""; ?>
     <div class="form__item <?= $classname; ?>">
       <label for="category">Категория <sup>*</sup></label>
-      <select id="category" name="category" placeholder="Выберите категорию" value="<?= getPostVal("category_name"); ?>">
+      <select id="category" name="category" placeholder="Выберите категорию">
         <option>Выберите категорию</option>
         <?php foreach ($categories as $category): ?>
-          <option value="<?php echo $category["id"]; ?>"><?php echo $category["category_name"]; ?></option>
+          <option value="<?= $category["id"]; ?>"
+          <?php if ($category["id"] == getPostVal("category")): ?> selected<?php endif; ?>><?= $category["category_name"]; ?></option>
         <?php endforeach; ?>
       </select>
       <span class="form__error"><?= $errors["category"]; ?></span>
