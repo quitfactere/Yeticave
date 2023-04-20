@@ -78,6 +78,10 @@ function get_users_data($con) {
   }
 }
 
-function get_query_create_account($name): string {
-  return "INSERT INTO users (email, user_name, user_password, contacts) VALUES (?, $name, ?, ?)";
+/** Формирует SQL-запрос для регистрации нового пользователя
+ * @param integer $user_id id пользователя
+ * @return string SQL-запрос
+ */
+function get_query_create_user() {
+  return "INSERT INTO users (user_date_registration, email, user_name, user_password, contacts) VALUES (NOW(), ?, ?, ?, ?)";
 }

@@ -10,7 +10,6 @@
 
 ?>
 
-
 <?php if (!function_exists('price_format_substr')) {
   function price_format_substr($price) {
     $price_ceil = ceil($price);
@@ -105,7 +104,6 @@ function validate_date($date) {
     return "Содержимое поля \"Дата окончания торгов\" должно быть датой в формате \"ГГГГ-ММ-ДД\"";
   }
 }
-
 
 function validate_email($email/*, $email_array*/) {
   if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {

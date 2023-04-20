@@ -29,41 +29,44 @@ function is_date_valid(string $date) : bool {
  *
  * @return mysqli_stmt Подготовленное выражение
  */
-function db_get_prepare_stmt($link, $sql, $data = []) {
-    $stmt = mysqli_prepare($link, $sql);
+function db_get_prepare_stmt($link, $sql, $data = []) { //data - массив значений формы из POST-запроса
+    $stmt = mysqli_prepare($link, $sql);//возвращает объект запроса или false
 
     if ($stmt === false) {
         $errorMsg = 'Не удалось инициализировать подготовленное выражение: ' . mysqli_error($link);
         die($errorMsg);
     }
 
-    if ($data) {
+    if ($data) {//если есть переданные данные (значения POST-запроса)
         $types = '';
         $stmt_data = [];
 
-        foreach ($data as $value) {
-            $type = 's';
+        foreach ($data as $value) {//обходим массив со значениями, полученными из POST-запроса
+            $type = 's';//метка вместо плейсхолдера
 
-            if (is_int($value)) {
-                $type = 'i';
+            if (is_int($value)) {//если данное значение есть целое число
+                $type = 'i';//метка вместо плейсхолдера
             }
-            else if (is_string($value)) {
-                $type = 's';
+            else if (is_string($value)) {//если данное значение есть строка
+                $type = 's';//метка вместо плейсхолдера
             }
-            else if (is_double($value)) {
-                $type = 'd';
+            else if (is_double($value)) {//если данное значение есть число с плавающей запятой
+                $type = 'd';//метка вместо плейсхолдера
             }
 
-            if ($type) {
-                $types .= $type;
-                $stmt_data[] = $value;
+            if ($type) {//если есть метки (в массиве есть данные (число, дробь или строка))
+                $types .= $type;//соединяем метки в одну строку
+                $stmt_data[] = $value;//записываем в массив данное значение (число, строку или дробь)
             }
         }
 
-        $values = array_merge([$stmt, $types], $stmt_data);
+        $values = array_merge([$stmt, $types], $stmt_data);/* соединяет в один массив подготовленное выражение ($stmt) и
+ 				строку с метками значений $types (isd) с одной стороны, и массив со значениями,
+ 				в соотв. со строкой меток $stmt_data с другой*/
 
-        $func = 'mysqli_stmt_bind_param';
-        $func(...$values);
+        $func = 'mysqli_stmt_bind_param';//записываем строку, чтобы...
+        $func(...$values);/* значения из полей формы, полученные из POST-запроса($stmt_data),
+ 				встали вместо меток ($types) в подготовленном выражении, в соответствии с расположением и типом меток ($types) */
 
         if (mysqli_errno($link) > 0) {
             $errorMsg = 'Не удалось связать подготовленное выражение с параметрами: ' . mysqli_error($link);
