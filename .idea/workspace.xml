@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec946cff-ffa6-4390-b580-44d28ffc6c56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/init/uploads/643e7d573e60b.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/init/uploads/643e7d68dfb1e.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="ec946cff-ffa6-4390-b580-44d28ffc6c56" name="Default Changelist" comment="19.04.2023">
+      <change afterPath="$PROJECT_DIR$/init/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/logout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/templates/main-login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/404.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/data.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/data.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/helpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/models.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/models.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/sign-up.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/templates/layout-sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/404.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/templates/layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/layout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/templates/main-sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/main-sign-up.php" afterDir="false" />
     </list>
@@ -61,7 +62,9 @@
       <recent name="C:\OSPanel\domains\yeticave\init\uploads" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\yeticave\init" />
       <recent name="C:\OSPanel\domains\yeticave\init\templates" />
+      <recent name="C:\OSPanel\domains\yeticave\init\" />
     </key>
   </component>
   <component name="RunManager" selected="Database Script.schema.sql">
@@ -134,8 +137,20 @@
       <workItem from="1681816784629" duration="753000" />
       <workItem from="1681888020772" duration="8052000" />
       <workItem from="1681967695006" duration="607000" />
-      <workItem from="1681974222325" duration="1591000" />
+      <workItem from="1681974222325" duration="7962000" />
+      <workItem from="1681987611637" duration="389000" />
+      <workItem from="1682061493117" duration="5178000" />
+      <workItem from="1682077240813" duration="259000" />
+      <workItem from="1682077520288" duration="551000" />
     </task>
+    <task id="LOCAL-00001" summary="19.04.2023">
+      <created>1681975985687</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681975985687</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +173,8 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/init" />
     </ignored-roots>
+    <MESSAGE value="19.04.2023" />
+    <option name="LAST_COMMIT_MESSAGE" value="19.04.2023" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

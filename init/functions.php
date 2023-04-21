@@ -105,16 +105,10 @@ function validate_date($date) {
   }
 }
 
-function validate_email($email/*, $email_array*/) {
+function validate_email($email, /*$email_array*/) {
   if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     return "Необходимо ввести корректный email";
   }
-/*
-  foreach ($email_array as $email_exist) {
-    if ($email == $email_exist["email"]) {
-      return "Введённый email уже зарегистрирован другим пользователем";
-    }
-  }*/
 }
 
 function validate_length($value, $min, $max) {

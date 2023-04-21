@@ -12,7 +12,7 @@ $page_content = include_template("main-sign-up.php", [
 ]);
 
 if($_SERVER['REQUEST_METHOD'] === 'POST') {//если метод для запроса страницы POST
-	$required = ['email', 'password', 'name', 'message',];//массив полей, необходимых для заполнения
+	$required = ['email', 'name', 'password', 'message'];//массив полей, необходимых для заполнения
 	$errors = [];//массив для ошибок, которые будут показаны внутри шаблона
 	
 	$rules = [ //правила валидации, отдельные функции, записанные в ассоциативный массив
@@ -32,8 +32,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {//если метод для запр
 	
 	$user = filter_input_array(INPUT_POST, [ //получаем все значения из формы и одновременно их фильтруем, названия полей и доп.атрибуты
 		"email" => FILTER_DEFAULT,
-		"password" => FILTER_DEFAULT,
 		"name" => FILTER_DEFAULT,
+		"password" => FILTER_DEFAULT,
 		"message" => FILTER_DEFAULT
 	], true);
 	
@@ -64,8 +64,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {//если метод для запр
 			$errors["email"] = "Пользователь с таким e-mail уже зарегистрирован";
 		}
 		if(in_array($user["name"], $names)) {//если имя пользователя, отправленное из формы, совпадает с именем в массиве имён зарегистрированных пользователей
-			$errors["email"] = "Пользователь с таким именем уже зарегистрирован";
+			$errors["name"] = "Пользователь с таким именем уже зарегистрирован";
 		}
+		var_dump($emails);
 		
 		if(count($errors)) {//если были ошибки, просто показыавет шаблон с формой
 			$page_content = include_template("main-sign-up.php", [
@@ -75,23 +76,24 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {//если метод для запр
 			]);
 		} else {
 			$sql = get_query_create_user();//шаблон SQL-запроса для регистрации нового пользователя
-			$user["password"] = password_hash($user["password"], PASSWORD_DEFAULT);//создает хэш пароля
+			//$user["password"] = password_hash($user["password"], PASSWORD_DEFAULT);//создает хэш пароля
 			$stmt = db_get_prepare_stmt($con, $sql, $user); //Создает подготовленное выражение на основе готового SQL запроса и переданных данных
 			$result = mysqli_stmt_execute($stmt);
 			
 			if($result) {//если запрос выполнился успешно
-				header("Location: templates\main-sign-up.php");//переадресуем пользователя на страниу просмотра этого лота
+				header("Location: login.php");//переадресуем пользователя на страниу просмотра этого лота
 			} else {
 				$error = mysqli_error($con);
 			}
 		}
 	}
 }
+
 $layout_content = include_template("layout.php", [
 	"content" => $page_content,
 	"categories" => $categories,
 	"title" => "Регистрация",
-	"is_auth" => $is_auth,
+	/*"is_auth" => $is_auth,*/
 	"user_name" => $user_name
 ]);
 
