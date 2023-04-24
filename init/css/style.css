@@ -867,7 +867,7 @@ input:invalid .form__error{
 .form__item--invalid textarea,
 .form__item--invalid input {
   background: #ffffff url("../img/error.svg") 97% 11px no-repeat;
-  border-color: #f84646;
+  border-color: #f4646;
 }
 
 .form__item--invalid select {

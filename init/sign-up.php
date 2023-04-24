@@ -66,7 +66,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {//если метод для запр
 		if(in_array($user["name"], $names)) {//если имя пользователя, отправленное из формы, совпадает с именем в массиве имён зарегистрированных пользователей
 			$errors["name"] = "Пользователь с таким именем уже зарегистрирован";
 		}
-		var_dump($emails);
 		
 		if(count($errors)) {//если были ошибки, просто показыавет шаблон с формой
 			$page_content = include_template("main-sign-up.php", [
@@ -76,7 +75,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {//если метод для запр
 			]);
 		} else {
 			$sql = get_query_create_user();//шаблон SQL-запроса для регистрации нового пользователя
-			//$user["password"] = password_hash($user["password"], PASSWORD_DEFAULT);//создает хэш пароля
+			$user["password"] = password_hash($user["password"], PASSWORD_DEFAULT);//создает хэш пароля
 			$stmt = db_get_prepare_stmt($con, $sql, $user); //Создает подготовленное выражение на основе готового SQL запроса и переданных данных
 			$result = mysqli_stmt_execute($stmt);
 			
