@@ -1,4 +1,10 @@
 <?php
+
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
+ini_set('error_log', __DIR__ . '/php-errors.log');
+
 require_once("helpers.php");
 require_once("functions.php");
 require_once("data.php");
@@ -35,8 +41,10 @@ $layout_content = include_template("layout.php", [
 	"content" => $page_content,
 	"categories" => $categories,
 	"title" => "Главная",
-	/*"is_auth" => $is_auth,*/
+	"is_auth" => $is_auth,
   "user_name" => $user_name
 ]);
+
+
 
 print($layout_content);

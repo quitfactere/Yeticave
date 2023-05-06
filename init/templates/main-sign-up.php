@@ -1,3 +1,6 @@
+<?php
+if(!isset($_SESSION["name"])) {
+?>
 <nav class="nav">
     <ul class="nav__list container">
 			<?php foreach($categories as $category): ?>
@@ -20,7 +23,7 @@
 	<?php $classname = isset($errors["name"]) ? "form__item--invalid" : ""; ?>
     <div class="form__item <?= $classname; ?>">
         <label for="name">Имя<sup>*</sup></label>
-        <input id="name" type="name" name="name" placeholder="Введите имя"
+        <input id="name" type="text" name="name" placeholder="Введите имя"
                value="<?= getPostVal("name"); ?>">
         <span class="form__error"><?php echo $errors["name"]; ?></span>
     </div>
@@ -32,15 +35,18 @@
     </div>
 
 	
-	<?php $classname = isset($errors["message"]) ? "form__item--invalid" : ""; ?>
+	<?php $classname = isset($errors["contacts"]) ? "form__item--invalid" : ""; ?>
     <div class="form__item <?= $classname; ?>">
-        <label for="message">Контактные данные <sup>*</sup></label>
-        <textarea id="message" name="message"
-                  placeholder="Напишите как с вами связаться"><?= getPostVal("message"); ?></textarea>
-        <span class="form__error"><?php echo $errors["message"]; ?></span>
+        <label for="contacts">Контактные данные <sup>*</sup></label>
+        <textarea id="contacts" name="contacts"
+                  placeholder="Напишите как с вами связаться"><?= getPostVal("contacts"); ?></textarea>
+        <span class="form__error"><?php echo $errors["contacts"]; ?></span>
     </div>
     <span class="form__error form__error--bottom">Пожалуйста, исправьте ошибки в форме.</span>
     <button type="submit" class="button">Зарегистрироваться</button>
     <a class="text-link" href="#">Уже есть аккаунт</a>
 </form>
-
+<?php } else {
+	var_dump($errors(http_response_code(403)));
+}; ?>
+  <div><p>Вы уже зарегистрированы и авторизованы в системе!</p></div>

@@ -99,3 +99,10 @@ Stack trace:
 #0 C:\OSPanel\domains\yeticave\init\index.php(12): get_categories()
 #1 {main}
   thrown in C:\OSPanel\domains\yeticave\init\models.php on line 18
+[02-May-2023 13:47:31 Europe/Moscow] PHP Warning:  Undefined array key "name" in C:\OSPanel\domains\yeticave\init\data.php on line 5
+[03-May-2023 10:58:45 Europe/Moscow] PHP Warning:  Undefined array key "name" in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 22
+[04-May-2023 14:43:34 Europe/Moscow] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\OSPanel\domains\yeticave\init\index.php on line 14
+[04-May-2023 14:43:35 Europe/Moscow] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\OSPanel\domains\yeticave\init\index.php on line 14
+[04-May-2023 14:43:36 Europe/Moscow] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\OSPanel\domains\yeticave\init\index.php on line 14
+[04-May-2023 14:43:42 Europe/Moscow] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\OSPanel\domains\yeticave\init\index.php on line 14
+[04-May-2023 14:45:23 Europe/Moscow] PHP Warning:  Undefined array key "name" in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 28

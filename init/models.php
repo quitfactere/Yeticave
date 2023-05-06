@@ -29,7 +29,7 @@ function get_query_lot($id_lot) {
  */
 function get_query_create_lot($user_id): string {
   /** добавляет новый лот в таблицу lots */
-  return "INSERT INTO lots (title, category_id, lot_description, start_price, step, date_finish, image_path, user_id ) VALUES (?, ?, ?, ?, ?, ?, ?, $user_id)";
+  return "INSERT INTO lots (title, category_id, lot_description, start_price, step, date_finish, image_path, user_id) VALUES (?, ?, ?, ?, ?, ?, ?, $user_id)";
 }
 
 /**
@@ -84,4 +84,24 @@ function get_users_data($con) {
  */
 function get_query_create_user() {
   return "INSERT INTO users (user_date_registration, email, user_name, user_password, contacts) VALUES (NOW(), ?, ?, ?, ?)";
+}
+
+/**
+ *
+ */
+
+function get_login($con, $email) {
+	if (!$con) {
+		$error = mysqli_connect_error();
+		return $error;
+	} else {
+		$sql = "SELECT id, email, user_password, user_name FROM users WHERE email = '$email'";
+		$result = mysqli_query($con, $sql); //запрос к БД, возвращает результирующий  набор
+		if ($result) { // если запрос к БД, вернул истинный результат, т.е. данные
+			$users_data = get_arrow($result); //возвращает ассоциативный массив, либо 1 строка, либо несколько
+			return $users_data;
+		}
+		$error = mysqli_error($con);
+		return $error;
+	}
 }

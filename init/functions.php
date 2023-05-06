@@ -48,10 +48,12 @@ function get_time_left($date) {
  */
 function get_arrow($result_query) {
   $row = mysqli_num_rows($result_query);//получаем КОЛИЧЕСТВО сток в наборе результатов
-  if ($row === 1) {
-    $arrow = mysqli_fetch_assoc($result_query);//Выбирает одну строку данных из набора результатов и возвращает её в виде ассоциативного массива
-  } else if ($row > 1) {
-    $arrow = mysqli_fetch_all($result_query, MYSQLI_ASSOC);//возвращает массив, содержащий ассоциативные или обычные массивы с данными результирующей таблицы
+  if ($result_query) {
+    if($row === 1) {
+      $arrow = mysqli_fetch_assoc($result_query);//Выбирает одну строку данных из набора результатов и возвращает её в виде ассоциативного массива
+    } else if($row > 1) {
+      $arrow = mysqli_fetch_all($result_query, MYSQLI_ASSOC);//возвращает массив, содержащий ассоциативные или обычные массивы с данными результирующей таблицы
+    }
   }
 
   return $arrow;

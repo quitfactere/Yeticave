@@ -1,13 +1,43 @@
-<html><h3>Дата вчера, $date_yesterday = date_create("2023-03-31 09:00:00"), массив: </h3></html>
 <?php
-$date_yesterday = date_create("2023-03-31 09:00:00");
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><!--<h3>Дата вчера, $date_yesterday = date_create("2023-03-31 09:00:00"), массив: </h3>--></html>
+<?php /*
+$date_yesterday = date_create("2023-04-27 16:00:00");
 var_dump($date_yesterday);?>
 
 <html><h3>Дата сейчас, $date_now = date_create("now"), массив: </h3></html>
 <?php $date_now = date_create("now");
-var_dump($date_now); ?><html>
+var_dump($date_now); ?>
 
-<h3>Разница между датами, date_diff($date_now, $date_yesterday), массив: </h3></html>
+<html><h3>Разбиваем строку с датой: </h3></html>
+<?php $date_explode = date_parse($date_now);
+var_dump($date_explode); ?>
+
+<html><h3>Разница между датами, date_diff($date_now, $date_yesterday), массив: </h3></html>
 <?php
 $diff = date_diff($date_now, $date_yesterday);
 var_dump($diff);?>
@@ -41,5 +71,10 @@ var_dump($minutes); ?>
 <html><h3>Второй элемент массива $res, минуты </h3></html>
 <?php var_dump($res[] = $minutes);?>
 
-<html><div <?php if ($res[0] < 1) : ?>style="background-color:darkgrey" <?php endif; ?>>Если времени осталось меньше часа, блока закрашивается серым </div></html>
+<html><h3>Второй элемент массива $res, минуты </h3></html>
+<?php var_dump(gettimeofday(true));?>
+
+<html><div <?php if ($res[0] < 1) : ?>style="background-color:darkgrey" <?php endif; */?><!--Если времени осталось меньше часа, блока закрашивается серым </div>--></html>
+
+
 
