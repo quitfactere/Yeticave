@@ -1,5 +1,11 @@
 <?php
-$vasya_pass = password_hash("vasya_pass", PASSWORD_DEFAULT);
-$petya_pass = password_hash("petya_pass", PASSWORD_DEFAULT);
-var_dump($vasya_pass);
-var_dump($petya_pass);
+$nums = "12345";
+
+for ($i = 0; $i < strlen($nums); $i++) {
+  $swap = $nums[$i];// сохраняем первую цифру, 1
+  $nums[$i] = $nums[strlen($nums) - ($i + 1)];// на место первой цифры, 1, записываем пятую цифру - 5
+  $nums[strlen($nums) - 1] = $swap;//на место пятой цифры, 5, записываем первую цифру - 1
+}
+  echo $nums;
+
+?>

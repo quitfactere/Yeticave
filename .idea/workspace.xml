@@ -2,34 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec946cff-ffa6-4390-b580-44d28ffc6c56" name="Default Changelist" comment="24.04.2023">
-      <change afterPath="$PROJECT_DIR$/init/uploads/6452350d82211.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/init/uploads/64523522e560f.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/init/uploads/6452352d09333.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/init/uploads/6454da7f3d9b2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/init/uploads/6454dd6982466.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/init/uploads/6454df9353524.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/init/uploads/6454e093c4f63.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/init/uploads/6454e0c90ddb1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/init/uploads/6454e10c933f4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/uploads/64565f3ca2ba2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/uploads/645682a2eee73.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/data.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/data.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/img/lot-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/init/uploads/lot-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/img/lot-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/init/uploads/lot-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/img/lot-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/init/uploads/lot-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/img/lot-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/init/uploads/lot-4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/img/lot-5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/init/uploads/lot-5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/img/lot-6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/init/uploads/lot-6.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/lot.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/lot.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/models.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/models.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/php-errors.log" beforeDir="false" afterPath="$PROJECT_DIR$/init/php-errors.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/sign-up.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/templates/404.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/404.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/templates/layout-add.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/templates/layout-lot.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/templates/layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/layout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/templates/main-add.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/main-add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/templates/main-login.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/main-login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/templates/main-lot.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/main-lot.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/templates/main-sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/main-sign-up.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/templates/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/main.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/test.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/test_2.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/test_2.php" afterDir="false" />
     </list>
@@ -70,7 +60,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/init/templates" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.MySQL, MariaDB" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -80,6 +70,7 @@
       <recent name="C:\OSPanel\domains\yeticave\init\uploads" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\yeticave\init\uploads" />
       <recent name="C:\OSPanel\domains\yeticave\init" />
       <recent name="C:\OSPanel\domains\yeticave\init\templates" />
       <recent name="C:\OSPanel\domains\yeticave\init\" />
@@ -173,6 +164,19 @@
       <workItem from="1683012241698" duration="6059000" />
       <workItem from="1683099475429" duration="11281000" />
       <workItem from="1683185669582" duration="18939000" />
+      <workItem from="1683378526082" duration="129000" />
+      <workItem from="1683378666124" duration="770000" />
+      <workItem from="1683379846372" duration="6825000" />
+      <workItem from="1683389464114" duration="4043000" />
+      <workItem from="1683428396976" duration="4205000" />
+      <workItem from="1683441236511" duration="3551000" />
+      <workItem from="1683462469833" duration="1323000" />
+      <workItem from="1683474447711" duration="595000" />
+      <workItem from="1683532687854" duration="736000" />
+      <workItem from="1683553693165" duration="10269000" />
+      <workItem from="1683602395831" duration="5278000" />
+      <workItem from="1683634803384" duration="4948000" />
+      <workItem from="1683652951583" duration="273000" />
     </task>
     <task id="LOCAL-00001" summary="19.04.2023">
       <created>1681975985687</created>

@@ -5,7 +5,7 @@
  * @return string SQL-запрос
  */
 function qet_query_list_lots($date) {
-	return "SELECT lots.id, lots.title, lots.image_path, lots.start_price, lots.date_finish, categories.category_name FROM lots
+  return "SELECT lots.id, lots.title, lots.image_path, lots.start_price, lots.date_finish, categories.category_name FROM lots
                 JOIN categories ON lots.category_id = categories.id
                 WHERE lots.date_creation > $date ORDER BY date_creation DESC";
 }
@@ -16,9 +16,10 @@ function qet_query_list_lots($date) {
  * @return string SQL-запрос
  */
 function get_query_lot($id_lot) {
-	return "SELECT lots.title, lots.lot_description, lots.image_path, lots.start_price, lots.date_finish, categories.category_name
+  return "SELECT lots.title, lots.lot_description, lots.image_path, lots.start_price, lots.date_finish, users.user_name, categories.category_name 
 	FROM lots
 	JOIN categories ON lots.category_id = categories.id
+  JOIN users ON lots.user_id = users.id 
 	WHERE lots.id = $id_lot";
 }
 
@@ -91,17 +92,36 @@ function get_query_create_user() {
  */
 
 function get_login($con, $email) {
-	if (!$con) {
-		$error = mysqli_connect_error();
-		return $error;
-	} else {
-		$sql = "SELECT id, email, user_password, user_name FROM users WHERE email = '$email'";
-		$result = mysqli_query($con, $sql); //запрос к БД, возвращает результирующий  набор
-		if ($result) { // если запрос к БД, вернул истинный результат, т.е. данные
-			$users_data = get_arrow($result); //возвращает ассоциативный массив, либо 1 строка, либо несколько
-			return $users_data;
-		}
-		$error = mysqli_error($con);
-		return $error;
-	}
+  if (!$con) {
+    $error = mysqli_connect_error();
+    return $error;
+  } else {
+    $sql = "SELECT id, email, user_password, user_name FROM users WHERE email = '$email'";
+    $result = mysqli_query($con, $sql); //запрос к БД, возвращает результирующий  набор
+    if ($result) { // если запрос к БД, вернул истинный результат, т.е. данные
+      $users_data = get_arrow($result); //возвращает ассоциативный массив, либо 1 строка, либо несколько
+      return $users_data;
+    }
+    $error = mysqli_error($con);
+    return $error;
+  }
+}
+
+/** Нахождение id последнего лота в таблице lots
+ */
+function max_lots_id($connect) {
+  if (!$connect) {
+    $error = mysqli_connect_error();
+    return $error;
+  } else {
+    $sql = "SELECT MAX(id) FROM `lots`;";
+    $result = mysqli_query($connect, $sql);
+    if ($result) {
+      $max_lot_id= get_arrow($result);
+      return $max_lot_id;
+    } else {
+      $error = mysqli_error($connect);
+      return $error;
+    }
+  }
 }

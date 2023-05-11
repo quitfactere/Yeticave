@@ -17,8 +17,8 @@
     <ul class="lots__list">
       <?php foreach ($goods as $good): ?>
         <li class="lots__item lot">
-          <div class="lot__image">
-            <img src="<?= $good['image_path']; ?>" width="350" height="260" alt="">
+          <div class="lot__image"><a href="lot.php?id=<?= $good["id"]; ?>">
+            <img src="<?= $good['image_path']; ?>" width="350" height="260" alt=""></a>
           </div>
           <div class="lot__info">
             <span class="lot__category"><?= htmlspecialchars($good['category_name']); ?></span>

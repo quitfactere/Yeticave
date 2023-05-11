@@ -73,7 +73,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {//если метод для запр
 			$result = mysqli_stmt_execute($stmt);
 
 			if($result) {//если запрос выполнился успешно
-				header("Location: index.php");//переадресуем пользователя на страниу просмотра этого лота
+				header("Location: login.php");//переадресуем пользователя на страниу просмотра этого лота
 			} else {
 				$error = mysqli_error($con);
 			}
