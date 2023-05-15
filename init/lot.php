@@ -7,7 +7,7 @@ require_once("models.php");
 
 $categories = get_categories($con);
 
-$page_404 = include_template("404.php", [
+$page_404 = include_template("main-404.php", [
   "categories" => $categories
 ]);
 

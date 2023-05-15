@@ -2,26 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec946cff-ffa6-4390-b580-44d28ffc6c56" name="Default Changelist" comment="24.04.2023">
-      <change afterPath="$PROJECT_DIR$/init/uploads/64565f3ca2ba2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/init/uploads/645682a2eee73.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/404.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/templates/main-404.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/img/lot-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/init/uploads/lot-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/img/lot-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/init/uploads/lot-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/img/lot-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/init/uploads/lot-3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/img/lot-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/init/uploads/lot-4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/img/lot-5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/init/uploads/lot-5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/img/lot-6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/init/uploads/lot-6.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/lot.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/lot.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/models.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/models.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/php-errors.log" beforeDir="false" afterPath="$PROJECT_DIR$/init/php-errors.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/sign-up.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/templates/404.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/404.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/templates/main-lot.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/main-lot.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/templates/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/test_2.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/test_2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/templates/404.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
