@@ -21,13 +21,13 @@
             <img src="<?= $good['image_path']; ?>" width="350" height="260" alt=""></a>
           </div>
           <div class="lot__info">
-            <span class="lot__category"><?= htmlspecialchars($good['category_name']); ?></span>
+            <span class="lot__category"><?= $good['category_name']; ?></span>
             <h3 class="lot__title"><a class="text-link" href="lot.php?id=<?= $good["id"]; ?>"> <?= htmlspecialchars($good['title']); ?></a>
             </h3>
             <div class="lot__state">
               <div class="lot__rate">
                 <span class="lot__amount">Стартовая цена</span>
-                  <?= price_format($good['start_price']) ?>
+                  <?= price_format(htmlspecialchars($good['start_price'])); ?>
                 <b class="rub">&#8381;</b></span>
               </div>
               <?php $res = get_time_left($good["date_finish"]) ?>

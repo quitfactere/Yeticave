@@ -11,6 +11,8 @@ $page_404 = include_template("main-404.php", [
 	"categories" => $categories
 ]);
 
+
+
 $layout_content = include_template("layout.php", [
 	"content" => $page_404,
 	"categories" => $categories,

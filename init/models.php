@@ -108,7 +108,7 @@ function get_login($con, $email) {
 }
 
 /** Нахождение id последнего лота в таблице lots
- */
+
 function max_lots_id($connect) {
   if (!$connect) {
     $error = mysqli_connect_error();
@@ -124,4 +124,4 @@ function max_lots_id($connect) {
       return $error;
     }
   }
-}
+}*/

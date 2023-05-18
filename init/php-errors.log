@@ -109,3 +109,5 @@ Stack trace:
 [07-May-2023 09:53:45 Europe/Moscow] PHP Parse error:  syntax error, unexpected token "{", expecting "(" in C:\OSPanel\domains\yeticave\init\functions.php on line 47
 [07-May-2023 09:53:57 Europe/Moscow] PHP Parse error:  syntax error, unexpected token "{", expecting "(" in C:\OSPanel\domains\yeticave\init\functions.php on line 47
 [07-May-2023 09:53:58 Europe/Moscow] PHP Parse error:  syntax error, unexpected token "{", expecting "(" in C:\OSPanel\domains\yeticave\init\functions.php on line 47
+[16-May-2023 10:48:07 Europe/Moscow] PHP Parse error:  Unmatched '}' in C:\OSPanel\domains\yeticave\init\models.php on line 111
+[16-May-2023 10:52:33 Europe/Moscow] PHP Parse error:  Unclosed '{' on line 49 in C:\OSPanel\domains\yeticave\init\functions.php on line 128

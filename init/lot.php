@@ -17,7 +17,7 @@ $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);//получае
 /** если id лота true, то формируем запрос на получение данных о лоте из БД по его id
  *иначе страница 404
  */
-if(isset($id)) {//если ID лота присутствует
+if($id) {//если ID лота присутствует
   $sql = get_query_lot($id);//возвращаем информацию о лоте по его id из БД
 } else {
   print($page_404);
@@ -25,10 +25,8 @@ if(isset($id)) {//если ID лота присутствует
 }
 
 $result = mysqli_query($con, $sql); //получает из БД информацию о лоте
-$max_lots_id = max_lots_id($con);
 
-
-if(isset($result) && ($id > $max_lots_id)) {
+if($result) {
 	$lot = get_arrow($result); // получает массив из объекта результата
 } else {
 	$error = mysqli_error($con);
