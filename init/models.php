@@ -107,21 +107,21 @@ function get_login($con, $email) {
   }
 }
 
-/** Нахождение id последнего лота в таблице lots
+/** Получение наименования и описания всех лотов
+ */
 
-function max_lots_id($connect) {
-  if (!$connect) {
-    $error = mysqli_connect_error();
-    return $error;
-  } else {
-    $sql = "SELECT MAX(id) FROM `lots`;";
-    $result = mysqli_query($connect, $sql);
-    if ($result) {
-      $max_lot_id= get_arrow($result);
-      return $max_lot_id;
-    } else {
-      $error = mysqli_error($connect);
-      return $error;
-    }
-  }
-}*/
+function get_lots_name_desc($con, $sql) {
+	if(!$con) {
+		$error =mysqli_connect_error();
+		return $error;
+	} else {
+
+		$result = mysqli_query($con, $sql);
+		if ($result) { // если запрос к БД, вернул истинный результат, т.е. данные
+			$lots_name_desc = get_arrow($result); //возвращает ассоциативный массив, либо 1 строка, либо несколько
+			return $lots_name_desc;
+		}
+		$error = mysqli_error($con);
+		return $error;
+	}
+}

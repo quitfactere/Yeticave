@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec946cff-ffa6-4390-b580-44d28ffc6c56" name="Default Changelist" comment="24.04.2023">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/search.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/templates/main-search-result.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/404.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/404.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/lot.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/lot.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/models.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/models.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/php-errors.log" beforeDir="false" afterPath="$PROJECT_DIR$/init/php-errors.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/templates/main-404.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/main-404.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/templates/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/init/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/templates/layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/layout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/templates/main-login.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/main-login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,6 +165,8 @@
       <workItem from="1683634803384" duration="4948000" />
       <workItem from="1683652951583" duration="273000" />
       <workItem from="1684221123925" duration="5616000" />
+      <workItem from="1684491124936" duration="2613000" />
+      <workItem from="1684495072497" duration="8601000" />
     </task>
     <task id="LOCAL-00001" summary="19.04.2023">
       <created>1681975985687</created>
