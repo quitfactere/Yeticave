@@ -64,6 +64,9 @@ function get_arrow($result_query) {
 function getPostVal($name) {
 	return $_POST[$name] ?? "";
 }
+function getGetVal($name) {
+	return $_GET[$name] ?? "";
+}
 
 /**
  * Валидирует поле категории, если такой категории нет в списке

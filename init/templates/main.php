@@ -4,8 +4,8 @@
       горнолыжное снаряжение.</p>
     <ul class="promo__list">
       <?php foreach ($categories as $category): ?>
-        <li class="promo__item promo__item--<?= $category['character_code']; ?>">
-          <a class="promo__link" href="pages/all-lots.html"><?= $category['category_name']; ?></a>
+        <li class="promo__item promo__item--<?php echo $category['character_code']; ?>">
+          <a class="promo__link" href="pages/all-lots.html"><?php echo $category['category_name']; ?></a>
         </li>
       <?php endforeach; ?>
     </ul>
@@ -17,7 +17,7 @@
     <ul class="lots__list">
       <?php foreach ($goods as $good): ?>
         <li class="lots__item lot">
-          <div class="lot__image"><a href="lot.php?id=<?= $good["id"]; ?>">
+          <div class="lot__image"><a href="lot.php?id=<?= $good['id']; ?>">
             <img src="<?= $good['image_path']; ?>" width="350" height="260" alt=""></a>
           </div>
           <div class="lot__info">

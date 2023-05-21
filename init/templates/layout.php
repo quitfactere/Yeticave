@@ -16,7 +16,8 @@
         <img src="img/logo.svg" width="160" height="39" alt="Логотип компании YetiCave">
       </a>
       <form class="main-header__search" method="get" action="search.php" autocomplete="off">
-        <input type="search" name="search" placeholder="Поиск лота">
+        <input type="search" name="search" placeholder="<?php if(getGetVal("search")): ?><?= getGetVal("search") ?>
+          <?php else: ?>Поиск лота<?php endif; ?>">
         <input class="main-header__search-btn" type="submit" name="find" value="Найти">
       </form>
       <a class="main-header__add-lot button" href="add.php">Добавить лот</a>
@@ -42,6 +43,15 @@
       </nav>
     </div>
   </header>
+    <nav class="nav">
+      <ul class="nav__list container">
+				<?php foreach($categories as $category): ?>
+          <li class="nav__item">
+            <a href=""><?php echo $category["category_name"]; ?></a>
+          </li>
+				<?php endforeach; ?>
+      </ul>
+    </nav>
 
   <main class="container">
 		<?= $content; ?>

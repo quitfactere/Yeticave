@@ -15,12 +15,12 @@ if($_SERVER['REQUEST_METHOD'] === 'GET') {//если метод для запр�
 	WHERE match (title, lot_description) AGAINST('$search_request')";
 	$lots_name_desc = get_lots_name_desc($con, $sql); // получаем массив с наименованиями и описание лотов
 
-	var_dump($lots_name_desc);
+	var_dump($search_request);
 
 	$page_content = include_template("main-search-result.php", [
 		"categories" => $categories,
-		"search_request" => $search_request,
-		"lots_name_desc" => $lots_name_desc
+		"lots_name_desc" => $lots_name_desc,
+		"search_request" => $search_request
 	]);
 
 	$layout_content = include_template("layout.php", [
