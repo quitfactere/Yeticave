@@ -1,11 +1,8 @@
 <?php
-$nums = "12345";
 
-for ($i = 0; $i < strlen($nums); $i++) {
-  $swap = $nums[$i];// сохраняем первую цифру, 1
-  $nums[$i] = $nums[strlen($nums) - ($i + 1)];// на место первой цифры, 1, записываем пятую цифру - 5
-  $nums[strlen($nums) - 1] = $swap;//на место пятой цифры, 5, записываем первую цифру - 1
-}
-  echo $nums;
-
+$con = mysqli_connect('127.0.0.1', 'root', '', 'protocol');
+mysqli_set_charset($con,'utf8');
+$sql = "SELECT * FROM protocol_table";
+$result = mysqli_query($con, $sql);
+var_dump($result);
 ?>

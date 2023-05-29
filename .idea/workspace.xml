@@ -2,13 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec946cff-ffa6-4390-b580-44d28ffc6c56" name="Default Changelist" comment="24.04.2023">
+      <change afterPath="$PROJECT_DIR$/init/templates/main-search.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/uploads/64746deb0c896.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/uploads/64746e0175d71.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/uploads/64746e3156bdd.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/uploads/64746e56475e6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/uploads/64746e7956a7c.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/models.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/models.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/php-errors.log" beforeDir="false" afterPath="$PROJECT_DIR$/init/php-errors.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/queries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/init/queries.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/sign-up.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/templates/layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/layout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/templates/main-search-result.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/main-search-result.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/templates/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/templates/main-login.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/main-login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/templates/main-search-result.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/templates/main-sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/main-sign-up.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/test_2.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/test_2.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +56,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/init/templates" />
+    <property name="last_opened_file_path" value="D:/Web/technomart" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.MySQL, MariaDB" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -169,6 +180,21 @@
       <workItem from="1684495072497" duration="8601000" />
       <workItem from="1684603657780" duration="3035000" />
       <workItem from="1684608806576" duration="3266000" />
+      <workItem from="1684650760268" duration="4360000" />
+      <workItem from="1684675545993" duration="1622000" />
+      <workItem from="1684684000946" duration="4222000" />
+      <workItem from="1684740645796" duration="10482000" />
+      <workItem from="1684811856620" duration="1487000" />
+      <workItem from="1684912514909" duration="186000" />
+      <workItem from="1685086024767" duration="12213000" />
+      <workItem from="1685122264487" duration="1410000" />
+      <workItem from="1685245891368" duration="3993000" />
+      <workItem from="1685254176597" duration="53000" />
+      <workItem from="1685259509207" duration="59000" />
+      <workItem from="1685283770353" duration="5085000" />
+      <workItem from="1685323435108" duration="827000" />
+      <workItem from="1685326526614" duration="1193000" />
+      <workItem from="1685344203625" duration="13128000" />
     </task>
     <task id="LOCAL-00001" summary="19.04.2023">
       <created>1681975985687</created>

@@ -32,7 +32,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {//если метод для запр
 			$rule = $rules[$field];//получаем функцию валидирования
 			$errors[$field] = $rule($value);//выполняем и записываем результат работы функции валидирования
 		}
-		
+		var_dump($errors[$field]);
 		if(in_array($field, $required) && empty($value) && $field === 'email') {
 			$errors[$field] = "Поле E-mail необходимо заполнить";
 		}

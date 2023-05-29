@@ -1,12 +1,4 @@
-<nav class="nav">
-    <ul class="nav__list container">
-			<?php foreach($categories as $category): ?>
-          <li class="nav__item">
-              <a href=""><?php $category["category_name"]; ?></a>
-          </li>
-			<?php endforeach; ?>
-    </ul>
-</nav>
+
 <?php $classname = isset($errors) ? "form--invalid" : ""; ?>
 <form class="form container" action="login.php" method="post"> <!-- form--invalid -->
     <h2>Вход</h2>

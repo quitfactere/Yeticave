@@ -1,15 +1,7 @@
 <?php
 if(!isset($_SESSION["name"])) {
 ?>
-<nav class="nav">
-    <ul class="nav__list container">
-			<?php foreach($categories as $category): ?>
-          <li class="nav__item">
-              <a href="all-lots.html"><?= $category["category_name"]; ?></a>
-          </li>
-			<?php endforeach; ?>
-    </ul>
-</nav>
+
 <?php $classname = isset($errors) ? "form--invalid" : ""; ?>
 <form class="form container" action="sign-up.php" method="post" autocomplete="off"> <!-- form
     --invalid -->
@@ -49,4 +41,3 @@ if(!isset($_SESSION["name"])) {
 <?php } else {
 	var_dump($errors(http_response_code(403)));
 }; ?>
-  <div><p>Вы уже зарегистрированы и авторизованы в системе!</p></div>

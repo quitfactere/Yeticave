@@ -117,3 +117,66 @@ Stack trace:
 [20-May-2023 22:10:53 Europe/Moscow] PHP Warning:  Undefined variable $search_request in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 19
 [20-May-2023 22:40:03 Europe/Moscow] PHP Warning:  Undefined variable $search_request in C:\OSPanel\domains\yeticave\init\index.php on line 43
 [20-May-2023 22:40:05 Europe/Moscow] PHP Warning:  Undefined variable $search_request in C:\OSPanel\domains\yeticave\init\index.php on line 43
+[22-May-2023 11:12:46 Europe/Moscow] PHP Warning:  Undefined variable $lots_name_desc in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[22-May-2023 11:12:48 Europe/Moscow] PHP Warning:  Undefined variable $lots_name_desc in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[22-May-2023 11:12:50 Europe/Moscow] PHP Warning:  Undefined variable $lots_name_desc in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[22-May-2023 11:12:57 Europe/Moscow] PHP Warning:  Undefined variable $lots_name_desc in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:13:52 Europe/Moscow] PHP Warning:  Undefined variable $error in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:15:07 Europe/Moscow] PHP Warning:  Undefined variable $error in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:15:10 Europe/Moscow] PHP Warning:  Undefined variable $error in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:15:46 Europe/Moscow] PHP Warning:  Undefined variable $error in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:15:47 Europe/Moscow] PHP Warning:  Undefined variable $error in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:15:52 Europe/Moscow] PHP Warning:  Undefined variable $error in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:16:06 Europe/Moscow] PHP Warning:  Undefined variable $error in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:16:26 Europe/Moscow] PHP Warning:  Undefined variable $error in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:16:50 Europe/Moscow] PHP Fatal error:  Cannot use [] for reading in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:16:55 Europe/Moscow] PHP Warning:  Undefined variable $errors in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:16:55 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:17:11 Europe/Moscow] PHP Warning:  Undefined variable $errors in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:17:11 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:17:14 Europe/Moscow] PHP Warning:  Undefined variable $errors in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:17:14 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:20:20 Europe/Moscow] PHP Warning:  Undefined variable $errors in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:20:20 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:20:21 Europe/Moscow] PHP Warning:  Undefined variable $errors in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:20:21 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:23:47 Europe/Moscow] PHP Warning:  Undefined variable $errors in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:23:47 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:25:19 Europe/Moscow] PHP Warning:  Undefined variable $errors in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:25:19 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:27:31 Europe/Moscow] PHP Warning:  Undefined variable $errors in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:27:31 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:28:26 Europe/Moscow] PHP Warning:  Undefined variable $errors in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:30:27 Europe/Moscow] PHP Warning:  Undefined variable $errors in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:33:23 Europe/Moscow] PHP Warning:  Undefined variable $errors in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:33:23 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 23
+[26-May-2023 13:37:41 Europe/Moscow] PHP Warning:  Undefined variable $errors in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 24
+[26-May-2023 13:37:41 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 24
+[26-May-2023 13:40:28 Europe/Moscow] PHP Warning:  Undefined variable $errors in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 24
+[26-May-2023 13:40:28 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 24
+[26-May-2023 13:40:32 Europe/Moscow] PHP Warning:  Undefined variable $errors in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 24
+[26-May-2023 13:40:32 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 24
+[26-May-2023 13:41:48 Europe/Moscow] PHP Warning:  Undefined variable $errors in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 24
+[26-May-2023 13:41:48 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 24
+[26-May-2023 13:42:06 Europe/Moscow] PHP Warning:  Undefined variable $errors in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 24
+[26-May-2023 13:42:06 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 24
+[26-May-2023 13:42:12 Europe/Moscow] PHP Warning:  Undefined variable $errors in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 24
+[26-May-2023 13:42:12 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 24
+[26-May-2023 15:47:22 Europe/Moscow] PHP Warning:  Undefined variable $errors in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 24
+[26-May-2023 15:47:22 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 24
+[26-May-2023 15:50:12 Europe/Moscow] PHP Warning:  Undefined variable $errors in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 27
+[26-May-2023 15:50:12 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 27
+[26-May-2023 16:02:37 Europe/Moscow] PHP Warning:  Undefined variable $errors in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 24
+[26-May-2023 16:02:37 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 24
+[26-May-2023 16:02:39 Europe/Moscow] PHP Warning:  Undefined variable $errors in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 24
+[26-May-2023 16:02:39 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 24
+[26-May-2023 16:02:40 Europe/Moscow] PHP Warning:  Undefined variable $errors in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 24
+[26-May-2023 16:02:40 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 24
+[26-May-2023 16:10:41 Europe/Moscow] PHP Warning:  Undefined variable $errors in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 24
+[26-May-2023 16:10:41 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 24
+[26-May-2023 16:11:12 Europe/Moscow] PHP Warning:  Undefined variable $errors in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 24
+[26-May-2023 16:11:12 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 24
+[26-May-2023 20:41:21 Europe/Moscow] PHP Warning:  Undefined variable $errors in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 24
+[26-May-2023 20:43:55 Europe/Moscow] PHP Warning:  Undefined variable $errors in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 24
+[26-May-2023 20:46:06 Europe/Moscow] PHP Warning:  Undefined variable $errors in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 24
+[26-May-2023 20:46:06 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\templates\layout.php on line 24

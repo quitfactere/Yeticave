@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title><?= $title; ?></title>
+  <title>Yeticave</title>
   <link href="css/normalize.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -10,62 +10,64 @@
 <div class="page-wrapper">
 
   <header class="main-header">
+
     <div class="main-header__container container">
       <h1 class="visually-hidden">YetiCave</h1>
       <a href="index.php" class="main-header__logo">
         <img src="img/logo.svg" width="160" height="39" alt="Логотип компании YetiCave">
       </a>
       <form class="main-header__search" method="get" action="search.php" autocomplete="off">
-        <input type="search" name="search" placeholder="<?php if(getGetVal("search")): ?><?= getGetVal("search") ?>
+            <?php $classname = isset($errors["category"]) ? "form__item--invalid" : ""; ?>
+          <input type="search" name="search" placeholder="<?php if (getGetVal("search")): ?><?= getGetVal("search") ?>
           <?php else: ?>Поиск лота<?php endif; ?>">
-        <input class="main-header__search-btn" type="submit" name="find" value="Найти">
+          <input class="main-header__search-btn" type="submit" name="find" value="Найти">
       </form>
       <a class="main-header__add-lot button" href="add.php">Добавить лот</a>
 
       <nav class="user-menu">
-				<?php if($is_auth): ?>
-          <div class="user-menu__logged">
-            <p><?php if($user_name): ?><?= $user_name; ?><?php endif; ?></p>
-            <a class="user-menu__bets" href="pages/my-bets.html">Мои ставки</a>
-            <a class="user-menu__logout" href="logout.php">Выход</a>
-          </div>
-				<?php else: ?>
-          <ul class="user-menu__list">
-            <li class="user-menu__item">
+          <?php if ($is_auth): ?>
+            <div class="user-menu__logged">
+              <p><?php if ($user_name): ?><?= $user_name; ?><?php endif; ?></p>
+              <a class="user-menu__bets" href="pages/my-bets.html">Мои ставки</a>
+              <a class="user-menu__logout" href="logout.php">Выход</a>
+            </div>
+          <?php else: ?>
+            <ul class="user-menu__list">
+              <li class="user-menu__item">
                 <a href="sign-up.php">Регистрация</a>
-            </li>
-            <li class="user-menu__item">
-              <a href="login.php">Вход</a>
-            </li>
-          </ul>
-				<?php endif; ?>
+              </li>
+              <li class="user-menu__item">
+                <a href="login.php">Вход</a>
+              </li>
+            </ul>
+          <?php endif; ?>
 
       </nav>
     </div>
   </header>
-    <nav class="nav">
-      <ul class="nav__list container">
-				<?php foreach($categories as $category): ?>
+  <nav class="nav">
+    <ul class="nav__list container">
+        <?php foreach ($categories as $category): ?>
           <li class="nav__item">
             <a href=""><?php echo $category["category_name"]; ?></a>
           </li>
-				<?php endforeach; ?>
-      </ul>
-    </nav>
+        <?php endforeach; ?>
+    </ul>
+  </nav>
 
   <main class="container">
-		<?= $content; ?>
+      <?= $content; ?>
   </main>
 </div>
 
 <footer class="main-footer">
   <nav class="nav">
     <ul class="nav__list container">
-			<?php foreach($categories as $category): ?>
-        <li class="nav__item">
-          <a href="pages/all-lots.html"><?= $category['category_name']; ?></a>
-        </li>
-			<?php endforeach; ?>
+        <?php foreach ($categories as $category): ?>
+          <li class="nav__item">
+            <a href="pages/all-lots.html"><?= $category['category_name']; ?></a>
+          </li>
+        <?php endforeach; ?>
     </ul>
   </nav>
   <div class="main-footer__bottom container">

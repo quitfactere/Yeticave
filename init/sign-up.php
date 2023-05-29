@@ -48,7 +48,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {//если метод для запр
 	// если же будут текстовые значения, мы должны показать их на экране
 
 	if(count($errors)) {//если были ошибки, просто показыавет шаблон с формой
-		$page_content = include_template("main-sign-up.php", ["categories" => $categories, "user" => $user, //передаём данные, полученные из формы
+		$page_content = include_template("main-sign-up.php", [
+			"categories" => $categories,
+			"user" => $user, //передаём данные, полученные из формы
 			"errors" => $errors //передаем в шаблон список ошибок
 		]);
 	} else { //если ошибок не было
