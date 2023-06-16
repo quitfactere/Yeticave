@@ -9,6 +9,10 @@ $categories = get_categories($con);//получаем список катего�
 
 $page_content = include_template("main-sign-up.php", ["categories" => $categories]);
 
+$nav = include_template("nav.php", [
+    "categories" => $categories
+]);
+
 if($_SERVER['REQUEST_METHOD'] === 'POST') {//если метод для запроса страницы POST
 	$required = ['email', 'name', 'password', 'contacts'];//массив полей, необходимых для заполнения
 	$errors = [];//массив для ошибок, которые будут показаны внутри шаблона
@@ -86,6 +90,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {//если метод для запр
 $layout_content = include_template("layout.php",
 	["content" => $page_content,
 		"categories" => $categories,
+        "nav" => $nav,
 		"title" => "Регистрация",
 		"is_auth" => $is_auth,
 		"user_name" => $user_name]);

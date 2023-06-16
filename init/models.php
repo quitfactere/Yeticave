@@ -7,7 +7,7 @@
 function qet_query_list_lots($date) {
 	return "SELECT lots.id, lots.title, lots.image_path, lots.start_price, lots.date_finish, categories.category_name FROM lots
                 JOIN categories ON lots.category_id = categories.id
-                WHERE lots.date_creation > $date ORDER BY date_creation DESC";
+                WHERE lots.date_finish > $date ORDER BY date_creation DESC";
 }
 
 /**
@@ -16,7 +16,7 @@ function qet_query_list_lots($date) {
  * @return string SQL-запрос
  */
 function get_query_lot($id_lot) {
-	return "SELECT lots.title, lots.lot_description, lots.image_path, lots.start_price, lots.date_finish, users.user_name, categories.category_name 
+	return "SELECT lots.title, lots.lot_description, lots.image_path, lots.start_price, lots.date_finish, lots.step, users.user_name, categories.category_name 
 	FROM lots
 	JOIN categories ON lots.category_id = categories.id
   JOIN users ON lots.user_id = users.id 
@@ -40,13 +40,13 @@ function get_query_create_lot($user_id): string {
  * @return [Array | String] $categuries Ассоциативный массив с категориями лотов из базы данных
  * или описание последней ошибки подключения
  */
-function get_categories($connect) {
-	if(!$connect) {
+function get_categories($con) {
+	if(!$con) {
 		$error = mysqli_connect_error();
 		return $error;
 	} else {
 		$sql = "SELECT * FROM categories;";
-		$result = mysqli_query($connect, $sql);
+		$result = mysqli_query($con, $sql);
 		if($result) {
 			$categories = get_arrow($result);
 			return $categories;
@@ -111,10 +111,10 @@ function get_login($con, $email) {
 /** Получение наименования и описания всех лотов
  */
 
-function get_found_lots($con, $search_request) {
+function get_found_lots($con, $search_request, $limit, $offset) {
 	$sql = "SELECT lots.id, lots.title, lots.lot_description, lots.image_path, lots.start_price, lots.date_finish, categories.category_name 
 	FROM lots	JOIN categories ON lots.category_id = categories.id
-	WHERE match (title, lot_description) AGAINST(?);";
+	WHERE match (title, lot_description) AGAINST(?) ORDER BY date_creation DESC LIMIT $limit OFFSET $offset;";
 
 	$stmt = mysqli_prepare($con, $sql);
 	mysqli_stmt_bind_param($stmt, 's', $search_request);//в stmt на место ? подставляет $search_request
@@ -129,6 +129,22 @@ function get_found_lots($con, $search_request) {
 	return $error;
 }
 
+function qet_query_lots_cat($con, $character_code, $limit, $offset) {
+	$sql = "SELECT lots.id, lots.title, lots.lot_description, lots.image_path, lots.start_price, lots.date_finish, categories.category_name 
+	FROM lots JOIN categories ON lots.category_id = categories.id
+	WHERE categories.character_code = \"$character_code\" ORDER BY lots.date_creation DESC LIMIT $limit OFFSET $offset;";
+
+	$result = mysqli_query($con, $sql);
+	if($result) { // если запрос к БД, вернул истинный результат, т.е. данные
+		$lots_of_cat = get_arrow($result); //возвращает ассоциативный массив, либо 1 строка, либо несколько
+		return $lots_of_cat;
+	}
+	$error = mysqli_error($con);
+	return $error;
+}
+
+
+
 /**
  * функция подсчитывает количество найденных лотов, в соответствии с поисковым запросом
  * @param $con
@@ -136,7 +152,8 @@ function get_found_lots($con, $search_request) {
  * @return mixed|string
  */
 function get_count_lots($con, $search_request) {
-	$sql = "SELECT COUNT(*) as cnt FROM lots
+	//выбирает и считает количество лотов, которые совпадают с поисковым запросом
+	$sql = "SELECT COUNT(*) as cnt FROM lots 
 	WHERE match (title, lot_description) AGAINST(?);";
 
 	$stmt = mysqli_prepare($con, $sql);// подготавливает выражение $sql и возвращает указатель на это выражение
@@ -149,4 +166,93 @@ function get_count_lots($con, $search_request) {
 	}
 	$error = mysqli_error($con);
 	return $error;
+}
+
+/** выбирает и считает количество лотов, которые совпадают с поисковым запросом
+ * @param $con
+ * @param $character_code
+ * @return mixed|string
+ */
+function get_count_lots_cat($con, $character_code) {
+	$sql = "SELECT COUNT(*) as cnt FROM lots 
+	JOIN categories ON lots.category_id = categories.id
+	WHERE categories.character_code = \"$character_code\";";
+
+	$result = mysqli_query($con, $sql);
+	if ($result) {
+		$count = mysqli_fetch_assoc($result)["cnt"];
+		return $count;
+	}
+	$error = mysqli_error($con);
+	return $error;
+}
+
+/**
+ * Записывает в БД сделанную ставку
+ * @param $con ресурс соединения
+ * @param $sum сумма ставки
+ * @param $user_id id пользователя
+ * @param $lot_id id лота
+ * @return bool $result возвращает true в случае успешной записи
+ */
+function add_bet_database($con, $sum, $user_id, $lot_id) {
+    $sql = "INSERT INTO bets (bet_date, price_bet, user_id, lot_id) VALUE (NOW(), ?, $user_id, $lot_id)";
+    $stmt = mysqli_prepare($con, $sql);
+    mysqli_stmt_bind_param($stmt, "i", $sum);
+    $result = mysqli_stmt_execute($stmt);
+    if ($result) {
+        return $result;
+    }
+    $error = mysqli_error($con);
+    return $error;
+}
+
+/**
+ * Возвращает массив десяти последних ставок для данного лота
+ * @param $con подключние к БД
+ * @param $id_lot id данного лота
+ * @return array|string|null возвращаемый ассоциативный массив ставок
+ */
+function get_bets_history($con, $id_lot) {
+    if (!$con) {
+        $error = mysqli_connect_error();
+        return $error;
+    } else {
+        $sql = "SELECT users.user_name, bets.price_bet, DATE_FORMAT(bets.bet_date, '%d.%m.%y %H:%i') AS bet_date, bets.user_id
+        FROM bets
+        JOIN lots ON bets.lot_id = lots.id
+        JOIN users ON bets.user_id = users.id
+        WHERE lots.id = $id_lot
+        ORDER BY bets.bet_date DESC LIMIT 10;";
+        $result = mysqli_query($con, $sql);
+        if ($result) {
+            $list_bets = mysqli_fetch_all($result, MYSQLI_ASSOC);
+            return $list_bets;
+        }
+        $error = mysqli_error($con);
+        return $error;
+    }
+}
+
+/** Возвращает список ставок для конкретного пользователя
+ * @param $con Ресурс подключения
+ * @param $user_id ID пользователя
+ * @return array|string
+ */
+function get_bets($con, $user_id) {
+	$sql = "SELECT bets.bet_date, bets.price_bet, lots.title, lots.image_path, 
+       		lots.category_id, lots.user_id, lots.date_finish, lots.id, categories.category_name FROM bets
+					JOIN lots ON bets.lot_id = lots.id
+					JOIN users ON bets.user_id = users.id
+					JOIN categories ON categories.id = lots.category_id
+					WHERE bets.user_id = $user_id
+					ORDER BY bets.bet_date DESC";
+	$result = mysqli_query($con, $sql);
+	if($result) {
+		$list_bets = mysqli_fetch_all($result, MYSQLI_ASSOC);
+		return $list_bets;
+	} else {
+		$error = mysqli_error($con);
+		return $error;
+	}
 }

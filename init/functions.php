@@ -1,4 +1,17 @@
-<?php if(!function_exists('price_format')) {
+<?php
+/**
+ * Форматирует цену лота - разделяет пробелом разряды числа, добавляет знак рубля
+ * @param integer $num Цена лота
+ * @return string Как цена будет показываться в карточке
+ */
+function format_num($num) {
+	$num = ceil($num);
+	$num = number_format($num, 0, '', ' ');
+
+	return "$num ₽";
+}
+
+if(!function_exists('price_format')) {
 	function price_format($price) {
 		$price_ceil = ceil($price);
 		if($price_ceil > 1000) {
@@ -23,7 +36,7 @@
 ?>
 
 <?php
-function get_time_left($date) {
+function get_time_left($date) { //вычисляет разницу между датой окончания лота и 
 	date_default_timezone_set('Europe/Moscow');
 	$final_date = date_create($date); // 1. создаем конечную дату
 	$cur_date = date_create("now"); // 2. создаём текущую дату
@@ -31,10 +44,12 @@ function get_time_left($date) {
 	$format_diff = date_interval_format($diff, "%d %H %I"); // 4. создаём формат вывода даты
 	$arr = explode(" ", $format_diff); // 5. создаём массив из строк, разделённых разделителем "пробел"
 
+	$days = $arr[0];
 	$hours = $arr[0] * 24 + $arr[1];
 	$minutes = intval($arr[2]);
 	//$hours = str_pad($hours, 2, "0", STR_PAD_LEFT);// дополняет строку $hours нулями, до двух символов, слева
 	$minutes = str_pad($minutes, 2, "0", STR_PAD_LEFT);
+	$res[] = $days;
 	$res[] = $hours;
 	$res[] = $minutes;
 
@@ -64,6 +79,7 @@ function get_arrow($result_query) {
 function getPostVal($name) {
 	return $_POST[$name] ?? "";
 }
+
 function getGetVal($name) {
 	return $_GET[$name] ?? "";
 }
@@ -83,8 +99,8 @@ function validate_category($id, $allowed_list) {
 
 function validate_number($num) { //проверка на то, что пользователь ввел число больше нуля
 	if(!empty($num)) { //если значение поля (числа) не пустое
-		$num *= 1;
-		if(is_int($num) && $num > 0) { //если введённое значение - число И больше нуля
+		$num = $num * 1;
+		if(is_int($num) && $num > 0) { //если введённое значение является числом И больше нуля
 			return NULL;
 		}
 		return "Содержимое поля должно быть целым числом больше нуля";

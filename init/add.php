@@ -8,6 +8,10 @@ require_once("models.php");
 $categories = get_categories($con);//получаем список категорий
 $categories_id = array_column($categories, "id");//возвращает массив из значений id категорий
 
+$nav = include_template("nav.php", [
+    "categories" => $categories
+]);
+
 $page_content = include_template("main-add.php", [
 	"categories" => $categories
 ]);
@@ -54,7 +58,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {//если метод для запр
 	// если же будут текстовые значения, мы должны показать их на экране
 
 	if(!empty($_FILES["lot-img"]["name"])) { //если файл загружен, присутствует в массиве $_FILES
-		$tmp_name = $_FILES["lot-img"]["tmp_name"];//задаем временное имя загруженного файла
+		$tmp_name = $_FILES["lot-img"]["tmp_name"];//записываем временное имя загруженного файла
 		$path = $_FILES["lot-img"]["name"];//путь к загруженному файлу
 
 		$finfo = finfo_open(FILEINFO_MIME_TYPE);
@@ -64,7 +68,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {//если метод для запр
 		} else if($file_type === "image/png") {
 			$ext = ".png";
 		};
-		if($ext) { //если тип файла является изображением
+		if($ext) { //если тип файла является изображением (.jpeg, .png)
 			$filename = uniqid() . $ext;//задаем уникальный идентификатор файлу
 			$lot["path"] = "uploads/" . $filename;//сохраняем путь к загруженному файлу
 			move_uploaded_file($_FILES["lot-img"]["tmp_name"], "uploads/" . $filename);//перемещает файл из временного хранилища в новое место
@@ -99,8 +103,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {//если метод для запр
 $layout_content = include_template("layout.php", [
 	"content" => $page_content,
 	"categories" => $categories,
+    "nav" => $nav,
 	"is_auth" => $is_auth,
-	"user_name" => $user_name
+	"user_name" => $user_name,
+	"title" => "Добавление лота"
 ]);
 
 print($layout_content);

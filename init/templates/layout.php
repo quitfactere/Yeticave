@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Yeticave</title>
+  <title><?= $title; ?></title>
   <link href="css/normalize.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -28,7 +28,7 @@
           <?php if ($is_auth): ?>
             <div class="user-menu__logged">
               <p><?php if ($user_name): ?><?= $user_name; ?><?php endif; ?></p>
-              <a class="user-menu__bets" href="pages/my-bets.html">Мои ставки</a>
+              <a class="user-menu__bets" href="my-bets.php">Мои ставки</a>
               <a class="user-menu__logout" href="logout.php">Выход</a>
             </div>
           <?php else: ?>
@@ -45,15 +45,7 @@
       </nav>
     </div>
   </header>
-  <nav class="nav">
-    <ul class="nav__list container">
-        <?php foreach ($categories as $category): ?>
-          <li class="nav__item">
-            <a href=""><?php echo $category["category_name"]; ?></a>
-          </li>
-        <?php endforeach; ?>
-    </ul>
-  </nav>
+  <?= $nav; ?>
 
   <main class="container">
       <?= $content; ?>
@@ -65,7 +57,7 @@
     <ul class="nav__list container">
         <?php foreach ($categories as $category): ?>
           <li class="nav__item">
-            <a href="pages/all-lots.html"><?= $category['category_name']; ?></a>
+            <a href="#"><?= $category['category_name']; ?></a>
           </li>
         <?php endforeach; ?>
     </ul>

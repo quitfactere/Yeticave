@@ -11,6 +11,10 @@ $page_content = include_template("main-login.php",
 	["categories" => $categories]
 );
 
+$nav = include_template("nav.php", [
+    "categories" => $categories
+]);
+
 if($_SERVER['REQUEST_METHOD'] === 'POST') {//если метод для запроса страницы POST
 	$required = ['email', 'password'];//массив полей, необходимых для заполнения
 	$errors = [];//массив для ошибок, которые будут показаны внутри шаблона
@@ -32,7 +36,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {//если метод для запр
 			$rule = $rules[$field];//получаем функцию валидирования
 			$errors[$field] = $rule($value);//выполняем и записываем результат работы функции валидирования
 		}
-		var_dump($errors[$field]);
+
 		if(in_array($field, $required) && empty($value) && $field === 'email') {
 			$errors[$field] = "Поле E-mail необходимо заполнить";
 		}
@@ -77,6 +81,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {//если метод для запр
 $layout_content = include_template("layout.php",
 	["content" => $page_content,
 		"categories" => $categories,
+        "nav" => $nav,
 		"title" => "Регистрация",
 		"is_auth" => $is_auth,
 		"user_name" => $user_name]);

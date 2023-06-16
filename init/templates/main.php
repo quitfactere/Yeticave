@@ -15,24 +15,23 @@
       <h2>Открытые лоты</h2>
     </div>
     <ul class="lots__list">
-      <?php foreach ($goods as $good): ?>
+      <?php foreach ($lots as $lot): ?>
         <li class="lots__item lot">
-          <div class="lot__image"><a href="lot.php?id=<?= $good['id']; ?>">
-            <img src="<?= $good['image_path']; ?>" width="350" height="260" alt=""></a>
+          <div class="lot__image"><a href="lot.php?id=<?= $lot['id']; ?>">
+            <img src="<?= $lot['image_path']; ?>" width="350" height="260" alt=""></a>
           </div>
           <div class="lot__info">
-            <span class="lot__category"><?= $good['category_name']; ?></span>
-            <h3 class="lot__title"><a class="text-link" href="lot.php?id=<?= $good["id"]; ?>"> <?= htmlspecialchars($good['title']); ?></a>
+            <span class="lot__category"><?= $lot['category_name']; ?></span>
+            <h3 class="lot__title"><a class="text-link" href="lot.php?id=<?= $lot["id"]; ?>"> <?= htmlspecialchars($lot['title']); ?></a>
             </h3>
             <div class="lot__state">
               <div class="lot__rate">
                 <span class="lot__amount">Стартовая цена</span>
-                  <?= price_format(htmlspecialchars($good['start_price'])); ?>
-                <b class="rub">&#8381;</b></span>
+                  <?= format_num(htmlspecialchars($lot["start_price"])); ?>
               </div>
-              <?php $res = get_time_left($good["date_finish"]) ?>
+              <?php $res = get_time_left($lot["date_finish"]) ?>
               <div class="lot__timer timer <?php if ($res[0] < 1) : ?> timer--finishing<?php endif; ?>">
-                <?= "$res[0]:$res[1]"; ?>
+                <?= "$res[0]" . "дн. " . "$res[1]:$res[2]"; ?>
               </div>
             </div>
           </div>

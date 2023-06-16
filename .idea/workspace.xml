@@ -2,23 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec946cff-ffa6-4390-b580-44d28ffc6c56" name="Default Changelist" comment="24.04.2023">
-      <change afterPath="$PROJECT_DIR$/init/templates/main-search.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/init/uploads/64746deb0c896.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/init/uploads/64746e0175d71.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/init/uploads/64746e3156bdd.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/init/uploads/64746e56475e6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/init/uploads/64746e7956a7c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/date_functions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/lots-of-cat.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/my-bets.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/templates/main-lots-of-cat.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/templates/main-my-bets.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/templates/nav.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/uploads/6476be3368313.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/uploads/6476c3946cc73.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/uploads/6476c93e3b3b1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/uploads/6476f482a4602.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/uploads/6476fa0ddfd61.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/uploads/647702a50541b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/winners.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/init/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/helpers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/lot.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/lot.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/models.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/models.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/php-errors.log" beforeDir="false" afterPath="$PROJECT_DIR$/init/php-errors.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/queries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/init/queries.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/search.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/sign-up.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/templates/layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/layout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/templates/main-login.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/main-login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/templates/main-search-result.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/templates/main-sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/main-sign-up.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/templates/main-add.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/main-add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/templates/main-lot.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/main-lot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/templates/main-search.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/main-search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/templates/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/templates/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/test.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init/test_2.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/test_2.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +54,12 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="PhpDebugGeneral" xdebug_force_break_when_no_path_mapping="false" xdebug_force_break_when_outside_project="false" />
+  <component name="PhpServers">
+    <servers>
+      <server host="http://yeticave/init/" id="8e2620c3-476b-4a9e-bbc2-cf780fb0e430" name="yeticave" />
+    </servers>
+  </component>
   <component name="ProjectId" id="2NMVI4Dg0ySy5pfm94bonoPHZm5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -56,15 +76,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/Web/technomart" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/init" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.MySQL, MariaDB" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\OSPanel\domains\yeticave\init\templates" />
       <recent name="C:\OSPanel\domains\yeticave\init" />
+      <recent name="C:\OSPanel\domains\yeticave\init\templates" />
       <recent name="C:\OSPanel\domains\yeticave\init\uploads" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -74,7 +94,7 @@
       <recent name="C:\OSPanel\domains\yeticave\init\" />
     </key>
   </component>
-  <component name="RunManager" selected="Database Script.schema.sql">
+  <component name="RunManager" selected="PHP Remote Debug.xdebug">
     <configuration name="queries.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/init/queries.sql" />
       <script-mode>FILE</script-mode>
@@ -87,8 +107,26 @@
       <data-source id="6bcf6c82-f2df-449c-b2e6-3c5c2be5b390" />
       <method v="2" />
     </configuration>
+    <configuration name="main-lot.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/yeticave/init/templates/main-lot.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="winners.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/yeticave/init/winners.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="xdebug" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" filter_connections="FILTER" server_name="yeticave" session_id="PHPSTORM">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Database Script.queries.sql" />
+      <item itemvalue="Database Script.schema.sql" />
+      <item itemvalue="JavaScript Debug.main-lot.php" />
+      <item itemvalue="JavaScript Debug.winners.php" />
+      <item itemvalue="PHP Remote Debug.xdebug" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.winners.php" />
+        <item itemvalue="JavaScript Debug.main-lot.php" />
         <item itemvalue="Database Script.queries.sql" />
         <item itemvalue="Database Script.schema.sql" />
       </list>
@@ -195,6 +233,15 @@
       <workItem from="1685323435108" duration="827000" />
       <workItem from="1685326526614" duration="1193000" />
       <workItem from="1685344203625" duration="13128000" />
+      <workItem from="1685416585006" duration="22576000" />
+      <workItem from="1685503214603" duration="3973000" />
+      <workItem from="1685517283087" duration="28166000" />
+      <workItem from="1685676010516" duration="11920000" />
+      <workItem from="1685801826952" duration="71413000" />
+      <workItem from="1686107719052" duration="55304000" />
+      <workItem from="1686640376031" duration="37282000" />
+      <workItem from="1686753009324" duration="10780000" />
+      <workItem from="1686811392824" duration="26094000" />
     </task>
     <task id="LOCAL-00001" summary="19.04.2023">
       <created>1681975985687</created>
@@ -244,6 +291,27 @@
     <MESSAGE value="21.04.2023" />
     <MESSAGE value="24.04.2023" />
     <option name="LAST_COMMIT_MESSAGE" value="24.04.2023" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/init/helpers.php</url>
+          <line>139</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/init/lot.php</url>
+          <line>36</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/init/winners.php</url>
+          <line>41</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

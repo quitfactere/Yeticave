@@ -683,7 +683,7 @@ main.container {
 }
 
 .timer--end {
-  padding: 6px 8px 5px 8px;
+  padding: 60px 8px 5px 8px;
 }
 
 .timer--win::before,

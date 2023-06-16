@@ -10,6 +10,7 @@ require_once("functions.php");
 require_once("data.php");
 require_once("init.php");
 require_once("models.php");
+require_once("winners.php");
 
 if(!$con) { //если подключение не состоялось
 	$error = mysqli_connect_error(); //возвращает сообщение об ошибки поледней попытки подключения
@@ -23,23 +24,31 @@ if($result) {//если результат возвращает данные и�
 	$error = mysqli_error($con); // возвращает сообщение об ошибке последнего вызова функции MySQLi, который может успешно выполниться или провалиться
 }
 
-$sql = qet_query_list_lots("\"2023-02-20 00:00:00\""); // формирует запрос на получение спискановых лотов, с сортировкой, после указанной даты
+$nav = include_template("nav.php", [
+    "categories" => $categories
+]);
+
+$date = date_create("now");
+$date_now = date_format($date, "Y-m-d");
+
+$sql = qet_query_list_lots("\"$date_now\""); // формирует запрос на получение спискановых лотов, с сортировкой, после указанной даты
 $result = mysqli_query($con, $sql); //результат запроса (подключение, выполнение запроса в БД)
 
 if($result) {//если результат запроса истина, т.е. состоялся
-	$goods = mysqli_fetch_all($result, MYSQLI_ASSOC); //выбирает все сроки из $result, возвращает ассоциативный массив
+	$lots = mysqli_fetch_all($result, MYSQLI_ASSOC); //выбирает все сроки из $result, возвращает ассоциативный массив
 } else {
 	$error = mysqli_error($con);
 }
 
 $page_content = include_template("main.php", [//подключает шаблон main.php, передаёт туда данные "categories", "goods" - переменные из массива
 	"categories" => $categories,
-	"goods" => $goods
+	"lots" => $lots
 ]);
 
 $layout_content = include_template("layout.php", [
 	"content" => $page_content,
 	"categories" => $categories,
+    "nav" => $nav,
 	"title" => "Главная",
 	"is_auth" => $is_auth,
   "user_name" => $user_name

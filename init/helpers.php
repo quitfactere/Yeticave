@@ -102,24 +102,27 @@ function db_get_prepare_stmt($link, $sql, $data = []) { //data - массив з
 function get_noun_plural_form (int $number, string $one, string $two, string $many): string
 {
     $number = (int) $number;
-    $mod10 = $number % 10;
-    $mod100 = $number % 100;
+    $mod10 = $number % 10; //целочисленный остаток от деления на 10
+    $mod100 = $number % 100; //целочисленный остаток от деления на 100
 
     switch (true) {
-        case ($mod100 >= 11 && $mod100 <= 20):
+        case ($mod10 === 1)://если остаток от деления на 10 === 1
+            return $one;//возвращает "минута"
+
+        case ($mod10 >= 2 && $mod10 <= 4)://если остаток от деления на 10 >= 2 И <= 4
+            return $two;//возвращает "минуты"
+
+        case ($mod10 >= 5 || $mod10 == 0)://если остаток от деления на 10 > 5
+            return $many; //возвращает "минут"
+
+			default: // по умолчанию возвращает "минуты"
             return $many;
-
-        case ($mod10 > 5):
-            return $many;
-
-        case ($mod10 === 1):
-            return $one;
-
-        case ($mod10 >= 2 && $mod10 <= 4):
-            return $two;
-
-        default:
-            return $many;
+            /**
+						 * 0, 10, 20, 50, 100 - минут - % 0
+						 * 1, 21, 31, 51, 101 - минута - % 1
+						 * 2, 3, 22, 33, 44, 204 - минуты - % >= 2 && <= 4
+						 * 5, 16, 57, 108, 209 - минут - % > 5
+						 */
     }
 }
 
