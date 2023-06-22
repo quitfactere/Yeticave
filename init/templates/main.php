@@ -5,7 +5,8 @@
     <ul class="promo__list">
       <?php foreach ($categories as $category): ?>
         <li class="promo__item promo__item--<?php echo $category['character_code']; ?>">
-          <a class="promo__link" href="pages/all-lots.html"><?php echo $category['category_name']; ?></a>
+          <a class="promo__link" href="lots-of-cat.php<?= "?category=" . $category["character_code"] ?>">
+						<?php echo $category["category_name"]; ?></a>
         </li>
       <?php endforeach; ?>
     </ul>
@@ -31,7 +32,7 @@
               </div>
               <?php $res = get_time_left($lot["date_finish"]) ?>
               <div class="lot__timer timer <?php if ($res[0] < 1) : ?> timer--finishing<?php endif; ?>">
-                <?= "$res[0]" . "дн. " . "$res[1]:$res[2]"; ?>
+                <?= "$res[0]" . "ч. " . "$res[1]" . "м. "; ?>
               </div>
             </div>
           </div>

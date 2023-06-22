@@ -8,14 +8,15 @@
     <p class="lot-item__description"><?= $lot['lot_description']; ?></p>
     <p>Автор лота: <?php echo $lot['user_name']; ?></p>
   </div>
-
   <div class="lot-item__right">
-		<?php if(isset($_SESSION['name']) && $lot["date_finish"] > $date_now && $_SESSION['name'] !== $lot['user_name']
-			&& ((isset($history[0]["user_name"])) && $_SESSION['name'] !== $history[0]["user_name"])): ?>
+    <?php if(empty($_SESSION['name']) || (isset($history[0]['user_name']) && $_SESSION['name'] === $history[0]['user_name'])): ?>
+    <div></div>
+		<?php elseif((isset($_SESSION['name'])) && $lot["date_finish"] > $date_now
+      && $_SESSION['name'] !== $lot['user_name'] || !isset($history[0]['user_name'])): ?>
       <div class="lot-item__state">
 				<?php $res = get_time_left($lot["date_finish"]) ?>
         <div class="lot-item__timer timer <?php if($res[0] < 1) : ?> timer--finishing<?php endif; ?>">
-					<?= "$res[0]" . "дн. " . "$res[1]:$res[2]"; ?>
+					<?= "$res[0]" . ":" . "$res[1]"; ?>
         </div>
         <div class="lot-item__cost-state">
           <div class="lot-item__rate">
@@ -32,17 +33,18 @@
           </div>
         </div>
         <form class="lot-item__form" action="lot.php?id=<?= $id; ?>" method="post" autocomplete="off">
-          <p class="lot-item__form-item form__item <?php if($error): ?>form__item--invalid<?php endif; ?>">
+          <p class="lot-item__form-item form__item <?php if(isset($error)): ?>form__item--invalid<?php endif; ?>">
             <label for="cost">Ваша ставка</label>
             <input id="cost" type="text" name="cost"
                    placeholder="от <?php if(count($history) > 0): ?><?= format_num($min_bet); ?>
 							<?php else: ?><?= format_num($lot["start_price"]); ?>
 							<?php endif; ?>">
-            <span class="form__error"><?= $error; ?></span>
+            <span class="form__error"><?php if(isset($error)): ?><?= $error; ?><?php endif; ?></span>
           </p>
           <button type="submit" class="button">Сделать ставку</button>
         </form>
       </div>
+
 		<?php else: ?>
       <div></div>
 		<?php endif; ?>
@@ -52,7 +54,7 @@
 				<?php foreach($history as $key): ?>
           <tr class="history__item">
             <td class="history__name"><?= $key["user_name"] ?></td>
-            <td class="history__price"><?= $key["price_bet"] ?></td>
+            <td class="history__price"><?= format_num(htmlspecialchars($key["price_bet"])) ?></td>
             <td class="history__time"><?= $key["bet_date"] ?></td>
           </tr>
 				<?php endforeach; ?>

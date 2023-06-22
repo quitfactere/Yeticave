@@ -69,12 +69,17 @@ if(isset($without_winners["id"])) {
 	$last_bet = get_last_bets($con, $without_winners["id"]);// для единственного лота без победителя, находит последнюю ставку
 
 	$send_winner_id = save_winner_id($con, $last_bet['user_id'], $without_winners["id"]);
+	mail($last_bet["email"], "Поздравляем!", "Вы победили в лоте!", 'From ' . 'zz@gmail.com');
 } elseif(isset($without_winners) && count($without_winners) > 1) {
 	foreach($without_winners as $key => $value) {
 		$last_bet = get_last_bets($con, $value["id"]);// для каждого лота без победителя, находит последнюю ставку
-		$send_winner_id = save_winner_id($con, $last_bet['user_id'], $value["id"]);
+		if(isset($last_bet)) {
+			$send_winner_id = save_winner_id($con, $last_bet['user_id'], $value["id"]);
+			mail($last_bet["email"], "Поздравляем!", "Вы победили в лоте!", 'From ' . 'zz@gmail.com');
+		}
 	}
 }
+
 
 ?>
 

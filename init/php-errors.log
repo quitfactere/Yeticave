@@ -3675,3 +3675,127 @@ Stack trace:
 #0 C:\OSPanel\domains\yeticave\init\index.php(13): require_once()
 #1 {main}
   thrown in C:\OSPanel\domains\yeticave\init\winners.php on line 76
+[16-Jun-2023 13:26:23 Europe/Moscow] PHP Warning:  Undefined variable $last_bets in C:\OSPanel\domains\yeticave\init\winners.php on line 79
+[16-Jun-2023 13:26:23 Europe/Moscow] PHP Stack trace:
+[16-Jun-2023 13:26:23 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[16-Jun-2023 13:26:23 Europe/Moscow] PHP   2. require_once() C:\OSPanel\domains\yeticave\init\index.php:13
+[16-Jun-2023 13:26:44 Europe/Moscow] PHP Warning:  Undefined variable $last_bet in C:\OSPanel\domains\yeticave\init\winners.php on line 79
+[16-Jun-2023 13:26:44 Europe/Moscow] PHP Stack trace:
+[16-Jun-2023 13:26:44 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[16-Jun-2023 13:26:44 Europe/Moscow] PHP   2. require_once() C:\OSPanel\domains\yeticave\init\index.php:13
+[18-Jun-2023 10:22:29 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\winners.php on line 76
+[18-Jun-2023 10:22:29 Europe/Moscow] PHP Stack trace:
+[18-Jun-2023 10:22:29 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[18-Jun-2023 10:22:29 Europe/Moscow] PHP   2. require_once() C:\OSPanel\domains\yeticave\init\index.php:13
+[18-Jun-2023 10:22:29 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\winners.php on line 77
+[18-Jun-2023 10:22:29 Europe/Moscow] PHP Stack trace:
+[18-Jun-2023 10:22:29 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[18-Jun-2023 10:22:29 Europe/Moscow] PHP   2. require_once() C:\OSPanel\domains\yeticave\init\index.php:13
+[18-Jun-2023 10:22:29 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\winners.php on line 76
+[18-Jun-2023 10:22:29 Europe/Moscow] PHP Stack trace:
+[18-Jun-2023 10:22:29 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[18-Jun-2023 10:22:29 Europe/Moscow] PHP   2. require_once() C:\OSPanel\domains\yeticave\init\index.php:13
+[18-Jun-2023 10:22:29 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\winners.php on line 77
+[18-Jun-2023 10:22:29 Europe/Moscow] PHP Stack trace:
+[18-Jun-2023 10:22:29 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[18-Jun-2023 10:22:29 Europe/Moscow] PHP   2. require_once() C:\OSPanel\domains\yeticave\init\index.php:13
+[18-Jun-2023 10:22:30 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\winners.php on line 76
+[18-Jun-2023 10:22:30 Europe/Moscow] PHP Stack trace:
+[18-Jun-2023 10:22:30 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[18-Jun-2023 10:22:30 Europe/Moscow] PHP   2. require_once() C:\OSPanel\domains\yeticave\init\index.php:13
+[18-Jun-2023 10:22:30 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\winners.php on line 77
+[18-Jun-2023 10:22:30 Europe/Moscow] PHP Stack trace:
+[18-Jun-2023 10:22:30 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[18-Jun-2023 10:22:30 Europe/Moscow] PHP   2. require_once() C:\OSPanel\domains\yeticave\init\index.php:13
+[18-Jun-2023 10:25:06 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\winners.php on line 76
+[18-Jun-2023 10:25:06 Europe/Moscow] PHP Stack trace:
+[18-Jun-2023 10:25:06 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[18-Jun-2023 10:25:06 Europe/Moscow] PHP   2. require_once() C:\OSPanel\domains\yeticave\init\index.php:13
+[18-Jun-2023 10:25:06 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\winners.php on line 77
+[18-Jun-2023 10:25:06 Europe/Moscow] PHP Stack trace:
+[18-Jun-2023 10:25:06 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[18-Jun-2023 10:25:06 Europe/Moscow] PHP   2. require_once() C:\OSPanel\domains\yeticave\init\index.php:13
+[18-Jun-2023 10:25:07 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\winners.php on line 76
+[18-Jun-2023 10:25:07 Europe/Moscow] PHP Stack trace:
+[18-Jun-2023 10:25:07 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[18-Jun-2023 10:25:07 Europe/Moscow] PHP   2. require_once() C:\OSPanel\domains\yeticave\init\index.php:13
+[18-Jun-2023 10:25:07 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\winners.php on line 77
+[18-Jun-2023 10:25:07 Europe/Moscow] PHP Stack trace:
+[18-Jun-2023 10:25:07 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[18-Jun-2023 10:25:07 Europe/Moscow] PHP   2. require_once() C:\OSPanel\domains\yeticave\init\index.php:13
+[18-Jun-2023 10:25:07 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\winners.php on line 76
+[18-Jun-2023 10:25:07 Europe/Moscow] PHP Stack trace:
+[18-Jun-2023 10:25:07 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[18-Jun-2023 10:25:07 Europe/Moscow] PHP   2. require_once() C:\OSPanel\domains\yeticave\init\index.php:13
+[18-Jun-2023 10:25:07 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\winners.php on line 77
+[18-Jun-2023 10:25:07 Europe/Moscow] PHP Stack trace:
+[18-Jun-2023 10:25:07 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[18-Jun-2023 10:25:07 Europe/Moscow] PHP   2. require_once() C:\OSPanel\domains\yeticave\init\index.php:13
+[18-Jun-2023 10:36:06 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\winners.php on line 76
+[18-Jun-2023 10:36:06 Europe/Moscow] PHP Stack trace:
+[18-Jun-2023 10:36:06 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[18-Jun-2023 10:36:06 Europe/Moscow] PHP   2. require_once() C:\OSPanel\domains\yeticave\init\index.php:13
+[18-Jun-2023 10:36:06 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\winners.php on line 76
+[18-Jun-2023 10:36:06 Europe/Moscow] PHP Stack trace:
+[18-Jun-2023 10:36:06 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[18-Jun-2023 10:36:06 Europe/Moscow] PHP   2. require_once() C:\OSPanel\domains\yeticave\init\index.php:13
+[18-Jun-2023 10:36:06 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\winners.php on line 76
+[18-Jun-2023 10:36:06 Europe/Moscow] PHP Stack trace:
+[18-Jun-2023 10:36:06 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[18-Jun-2023 10:36:06 Europe/Moscow] PHP   2. require_once() C:\OSPanel\domains\yeticave\init\index.php:13
+[18-Jun-2023 10:36:08 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\winners.php on line 76
+[18-Jun-2023 10:36:08 Europe/Moscow] PHP Stack trace:
+[18-Jun-2023 10:36:08 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[18-Jun-2023 10:36:08 Europe/Moscow] PHP   2. require_once() C:\OSPanel\domains\yeticave\init\index.php:13
+[18-Jun-2023 10:36:08 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\winners.php on line 76
+[18-Jun-2023 10:36:08 Europe/Moscow] PHP Stack trace:
+[18-Jun-2023 10:36:08 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[18-Jun-2023 10:36:08 Europe/Moscow] PHP   2. require_once() C:\OSPanel\domains\yeticave\init\index.php:13
+[18-Jun-2023 10:36:08 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\winners.php on line 76
+[18-Jun-2023 10:36:08 Europe/Moscow] PHP Stack trace:
+[18-Jun-2023 10:36:08 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[18-Jun-2023 10:36:08 Europe/Moscow] PHP   2. require_once() C:\OSPanel\domains\yeticave\init\index.php:13
+[18-Jun-2023 10:36:32 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\winners.php on line 76
+[18-Jun-2023 10:36:32 Europe/Moscow] PHP Stack trace:
+[18-Jun-2023 10:36:32 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[18-Jun-2023 10:36:32 Europe/Moscow] PHP   2. require_once() C:\OSPanel\domains\yeticave\init\index.php:13
+[18-Jun-2023 10:36:32 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\winners.php on line 77
+[18-Jun-2023 10:36:32 Europe/Moscow] PHP Stack trace:
+[18-Jun-2023 10:36:32 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[18-Jun-2023 10:36:32 Europe/Moscow] PHP   2. require_once() C:\OSPanel\domains\yeticave\init\index.php:13
+[18-Jun-2023 10:36:32 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\winners.php on line 76
+[18-Jun-2023 10:36:32 Europe/Moscow] PHP Stack trace:
+[18-Jun-2023 10:36:32 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[18-Jun-2023 10:36:32 Europe/Moscow] PHP   2. require_once() C:\OSPanel\domains\yeticave\init\index.php:13
+[18-Jun-2023 10:36:32 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\winners.php on line 77
+[18-Jun-2023 10:36:32 Europe/Moscow] PHP Stack trace:
+[18-Jun-2023 10:36:32 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[18-Jun-2023 10:36:32 Europe/Moscow] PHP   2. require_once() C:\OSPanel\domains\yeticave\init\index.php:13
+[18-Jun-2023 10:36:33 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\winners.php on line 76
+[18-Jun-2023 10:36:33 Europe/Moscow] PHP Stack trace:
+[18-Jun-2023 10:36:33 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[18-Jun-2023 10:36:33 Europe/Moscow] PHP   2. require_once() C:\OSPanel\domains\yeticave\init\index.php:13
+[18-Jun-2023 10:36:33 Europe/Moscow] PHP Warning:  Trying to access array offset on value of type null in C:\OSPanel\domains\yeticave\init\winners.php on line 77
+[18-Jun-2023 10:36:33 Europe/Moscow] PHP Stack trace:
+[18-Jun-2023 10:36:33 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[18-Jun-2023 10:36:33 Europe/Moscow] PHP   2. require_once() C:\OSPanel\domains\yeticave\init\index.php:13
+[19-Jun-2023 10:58:03 Europe/Moscow] PHP Warning:  Undefined array key 2 in C:\OSPanel\domains\yeticave\init\templates\main.php on line 34
+[19-Jun-2023 10:58:03 Europe/Moscow] PHP Stack trace:
+[19-Jun-2023 10:58:03 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[19-Jun-2023 10:58:03 Europe/Moscow] PHP   2. include_template($name = 'main.php', $data = ['categories' => [0 => [...], 1 => [...], 2 => [...], 3 => [...], 4 => [...], 5 => [...]], 'lots' => [0 => [...], 1 => [...], 2 => [...], 3 => [...]]]) C:\OSPanel\domains\yeticave\init\index.php:45
+[19-Jun-2023 10:58:03 Europe/Moscow] PHP   3. require() C:\OSPanel\domains\yeticave\init\helpers.php:145
+[19-Jun-2023 10:58:03 Europe/Moscow] PHP Warning:  Undefined array key 2 in C:\OSPanel\domains\yeticave\init\templates\main.php on line 34
+[19-Jun-2023 10:58:03 Europe/Moscow] PHP Stack trace:
+[19-Jun-2023 10:58:03 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[19-Jun-2023 10:58:03 Europe/Moscow] PHP   2. include_template($name = 'main.php', $data = ['categories' => [0 => [...], 1 => [...], 2 => [...], 3 => [...], 4 => [...], 5 => [...]], 'lots' => [0 => [...], 1 => [...], 2 => [...], 3 => [...]]]) C:\OSPanel\domains\yeticave\init\index.php:45
+[19-Jun-2023 10:58:03 Europe/Moscow] PHP   3. require() C:\OSPanel\domains\yeticave\init\helpers.php:145
+[19-Jun-2023 10:58:03 Europe/Moscow] PHP Warning:  Undefined array key 2 in C:\OSPanel\domains\yeticave\init\templates\main.php on line 34
+[19-Jun-2023 10:58:03 Europe/Moscow] PHP Stack trace:
+[19-Jun-2023 10:58:03 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[19-Jun-2023 10:58:03 Europe/Moscow] PHP   2. include_template($name = 'main.php', $data = ['categories' => [0 => [...], 1 => [...], 2 => [...], 3 => [...], 4 => [...], 5 => [...]], 'lots' => [0 => [...], 1 => [...], 2 => [...], 3 => [...]]]) C:\OSPanel\domains\yeticave\init\index.php:45
+[19-Jun-2023 10:58:03 Europe/Moscow] PHP   3. require() C:\OSPanel\domains\yeticave\init\helpers.php:145
+[19-Jun-2023 10:58:03 Europe/Moscow] PHP Warning:  Undefined array key 2 in C:\OSPanel\domains\yeticave\init\templates\main.php on line 34
+[19-Jun-2023 10:58:03 Europe/Moscow] PHP Stack trace:
+[19-Jun-2023 10:58:03 Europe/Moscow] PHP   1. {main}() C:\OSPanel\domains\yeticave\init\index.php:0
+[19-Jun-2023 10:58:03 Europe/Moscow] PHP   2. include_template($name = 'main.php', $data = ['categories' => [0 => [...], 1 => [...], 2 => [...], 3 => [...], 4 => [...], 5 => [...]], 'lots' => [0 => [...], 1 => [...], 2 => [...], 3 => [...]]]) C:\OSPanel\domains\yeticave\init\index.php:45
+[19-Jun-2023 10:58:03 Europe/Moscow] PHP   3. require() C:\OSPanel\domains\yeticave\init\helpers.php:145

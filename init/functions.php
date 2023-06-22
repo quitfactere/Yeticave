@@ -49,7 +49,6 @@ function get_time_left($date) { //вычисляет разницу между �
 	$minutes = intval($arr[2]);
 	//$hours = str_pad($hours, 2, "0", STR_PAD_LEFT);// дополняет строку $hours нулями, до двух символов, слева
 	$minutes = str_pad($minutes, 2, "0", STR_PAD_LEFT);
-	$res[] = $days;
 	$res[] = $hours;
 	$res[] = $minutes;
 
